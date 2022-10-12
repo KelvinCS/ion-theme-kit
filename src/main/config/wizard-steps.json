@@ -1,0 +1,436 @@
+[
+  {
+    "name": "Settings",
+    "fields": [
+      {
+        "name": "Brand Name",
+        "type": "text",
+        "placeholder": "Brand name + Year of the theme"
+      }
+    ]
+  },
+  {
+    "name": "Colors",
+    "sections": [
+      {
+        "name": "Primary",
+        "fields": [
+          {
+            "name": "Color A",
+            "variableName": "@color-a",
+            "type": "color",
+            "defaultValue": "#86af49"
+          },
+          {
+            "name": "Color A name",
+            "variableName": "@color-a-name",
+            "type": "text",
+            "defaultValue": "Greenery"
+          },
+          {
+            "name": "Color B",
+            "variableName": "@color-b",
+            "type": "color",
+            "defaultValue": "#3B8D54"
+          },
+          {
+            "name": "Color B name",
+            "variableName": "@color-b-name",
+            "type": "text",
+            "defaultValue": "Dark Lime"
+          },
+          {
+            "name": "Color C",
+            "variableName": "@color-c",
+            "type": "color",
+            "defaultValue": "#59c9d5"
+          },
+          {
+            "name": "Color C name",
+            "variableName": "@color-c-name",
+            "type": "text",
+            "defaultValue": "Aqua"
+          },
+          {
+            "name": "Color D",
+            "variableName": "@color-d",
+            "type": "color",
+            "defaultValue": "#02939a"
+          },
+          {
+            "name": "Color D name",
+            "variableName": "@color-d-name",
+            "type": "text",
+            "defaultValue": "Teal"
+          }
+        ]
+      },
+      {
+        "name": "Secondary",
+        "fields": [
+          {
+            "name": "Color H",
+            "variableName": "@color-h",
+            "type": "color",
+            "defaultValue": "#285124"
+          },
+          {
+            "name": "Color H name",
+            "variableName": "@color-h-name",
+            "type": "text",
+            "defaultValue": "Dark Moss"
+          },
+          {
+            "name": "Color I",
+            "variableName": "@color-i",
+            "type": "color",
+            "defaultValue": "#285124"
+          },
+          {
+            "name": "Color I name",
+            "variableName": "@color-i-name",
+            "type": "text",
+            "defaultValue": "Grass"
+          }
+        ]
+      },
+      {
+        "name": "Neutral",
+        "fields": [
+          {
+            "name": "Color E",
+            "variableName": "@color-e",
+            "type": "color",
+            "defaultValue": "#f5f9fb"
+          },
+          {
+            "name": "Color E name",
+            "variableName": "@color-e-name",
+            "type": "text",
+            "defaultValue": "Light Gray"
+          },
+          {
+            "name": "Color F",
+            "variableName": "@color-f",
+            "type": "color",
+            "defaultValue": "#8a9a9a"
+          },
+          {
+            "name": "Color F name",
+            "variableName": "@color-f-name",
+            "type": "text",
+            "defaultValue": "Medium Gray"
+          },
+          {
+            "name": "Color G",
+            "variableName": "@color-g",
+            "type": "color",
+            "defaultValue": "#5f7278"
+          },
+          {
+            "name": "Color G name",
+            "variableName": "@color-g-name",
+            "type": "text",
+            "defaultValue": "Dark Gray"
+          }
+        ]
+      },
+      {
+        "name": "Form Colors",
+        "fields": [
+          {
+            "name": "Error",
+            "variableName": "@error",
+            "type": "color",
+            "defaultValue": "#B32F3D"
+          },
+          {
+            "name": "Active",
+            "variableName": "@active",
+            "type": "color",
+            "defaultValue": "#59c9d5"
+          },
+          {
+            "name": "Placeholder color",
+            "variableName": "@placeholder-color",
+            "type": "color",
+            "defaultValue": "#8a9a9a"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Logo",
+    "fields": [
+      {
+        "name": "Logo",
+        "type": "file"
+      },
+      {
+        "name": "Logo Name",
+        "type": "text"
+      },
+      {
+        "name": "Logo width",
+        "type": "text"
+      },
+      {
+        "name": "Logo height",
+        "type": "text"
+      },
+      {
+        "name": "Logo width sm",
+        "type": "text"
+      },
+      {
+        "name": "Logo height sm",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "fields": [
+      {
+        "name": "Font",
+        "type": "textarea"
+      }
+    ]
+  },
+  {
+    "name": "Image Styling",
+    "fields": [
+      {
+        "name": "Rounded Corners",
+        "type": "text"
+      },
+      {
+        "name": "Shadow - A",
+        "type": "text"
+      },
+      {
+        "name": "Shadow - B",
+        "type": "text"
+      },
+      {
+        "name": "Border Style - A",
+        "type": "text"
+      },
+      {
+        "name": "Border Style - B",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "name": "Button Styling",
+    "fields": [
+      {
+        "name": "Margin",
+        "type": "text"
+      },
+      {
+        "name": "Border width",
+        "type": "text"
+      },
+      {
+        "name": "Border style",
+        "type": "text"
+      },
+      {
+        "name": "Border radius",
+        "type": "text"
+      },
+      {
+        "name": "Transition",
+        "type": "text"
+      },
+      {
+        "name": "Text transform",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "name": "Pods",
+    "fields": [
+      {
+        "name": "",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "name": "Accordions",
+    "fields": [
+      {
+        "name": "Toggle background",
+        "type": "text"
+      },
+      {
+        "name": "Active background",
+        "type": "text"
+      },
+      {
+        "name": "Hover background",
+        "type": "text"
+      },
+      {
+        "name": "Toggle color",
+        "type": "text"
+      },
+      {
+        "name": "Active color",
+        "type": "text"
+      },
+      {
+        "name": "Hover color",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "name": "Tabs",
+    "fields": [
+      {
+        "name": "Margin",
+        "type": "text"
+      },
+      {
+        "name": "Padding",
+        "type": "text"
+      },
+      {
+        "name": "Border radius",
+        "type": "text"
+      },
+      {
+        "name": "Transition",
+        "type": "text"
+      },
+      {
+        "name": "Font Size",
+        "type": "text"
+      },
+      {
+        "name": "Slide border radius",
+        "type": "text"
+      },
+      {
+        "name": "Slide Font Size",
+        "type": "text"
+      },
+      {
+        "name": "Toggle background",
+        "type": "text"
+      },
+      {
+        "name": "Active background",
+        "type": "text"
+      },
+      {
+        "name": "Hover background",
+        "type": "text"
+      },
+      {
+        "name": "Toggle color",
+        "type": "text"
+      },
+      {
+        "name": "Active color",
+        "type": "text"
+      },
+      {
+        "name": "Hover color",
+        "type": "text"
+      },
+      {
+        "name": "Toggle border",
+        "type": "text"
+      },
+      {
+        "name": "Active border",
+        "type": "text"
+      },
+      {
+        "name": "Hover border",
+        "type": "text"
+      },
+      {
+        "name": "Slide background",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "name": "Flows",
+    "fields": [
+      {
+        "name": "Dot background",
+        "type": "text"
+      },
+      {
+        "name": "Dot background dark",
+        "type": "text"
+      },
+      {
+        "name": "Dot background hover",
+        "type": "text"
+      },
+      {
+        "name": "Dot background active",
+        "type": "text"
+      },
+      {
+        "name": "Dot text",
+        "type": "text"
+      },
+      {
+        "name": "Dot text hover",
+        "type": "text"
+      },
+      {
+        "name": "Dot text active",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "name": "Forms",
+    "fields": [
+      {
+        "name": "Input Color",
+        "type": "text"
+      },
+      {
+        "name": "Input background",
+        "type": "text"
+      },
+      {
+        "name": "Input border color",
+        "type": "text"
+      },
+      {
+        "name": "Input border",
+        "type": "text"
+      },
+      {
+        "name": "Input padding",
+        "type": "text"
+      },
+      {
+        "name": "Input color hover",
+        "type": "text"
+      },
+      {
+        "name": "Input background hover",
+        "type": "text"
+      },
+      {
+        "name": "Input border radius",
+        "type": "text"
+      }
+    ]
+  }
+]
