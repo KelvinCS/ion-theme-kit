@@ -5,7 +5,9 @@
       {
         "name": "Brand Name",
         "type": "text",
-        "placeholder": "Brand name + Year of the theme"
+        "placeholder": "Brand name + Year of the theme",
+        "defaultValue": "",
+        "variableName": "@BrandName"
       }
     ]
   },
@@ -165,27 +167,33 @@
     "fields": [
       {
         "name": "Logo",
-        "type": "file"
+        "type": "file",
+        "defaultValue": ""
       },
       {
         "name": "Logo Name",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Logo width",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Logo height",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Logo width sm",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Logo height sm",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       }
     ]
   },
@@ -194,7 +202,8 @@
     "fields": [
       {
         "name": "Font",
-        "type": "textarea"
+        "type": "textarea",
+        "defaultValue": ""
       }
     ]
   },
@@ -203,23 +212,28 @@
     "fields": [
       {
         "name": "Rounded Corners",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Shadow - A",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Shadow - B",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Border Style - A",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Border Style - B",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       }
     ]
   },
@@ -228,27 +242,33 @@
     "fields": [
       {
         "name": "Margin",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Border width",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Border style",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Border radius",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Transition",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Text transform",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       }
     ]
   },
@@ -257,7 +277,8 @@
     "fields": [
       {
         "name": "",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       }
     ]
   },
@@ -266,27 +287,33 @@
     "fields": [
       {
         "name": "Toggle background",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Active background",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Hover background",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Toggle color",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Active color",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Hover color",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       }
     ]
   },
@@ -295,71 +322,88 @@
     "fields": [
       {
         "name": "Margin",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Padding",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Border radius",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Transition",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Font Size",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Slide border radius",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Slide Font Size",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Toggle background",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Active background",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Hover background",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Toggle color",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Active color",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Hover color",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Toggle border",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Active border",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Hover border",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Slide background",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       }
     ]
   },
@@ -368,31 +412,38 @@
     "fields": [
       {
         "name": "Dot background",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Dot background dark",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Dot background hover",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Dot background active",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Dot text",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Dot text hover",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Dot text active",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       }
     ]
   },
@@ -401,35 +452,43 @@
     "fields": [
       {
         "name": "Input Color",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Input background",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Input border color",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Input border",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Input padding",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Input color hover",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Input background hover",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       },
       {
         "name": "Input border radius",
-        "type": "text"
+        "type": "text",
+        "defaultValue": ""
       }
     ]
   }

@@ -3,6 +3,7 @@ import {Wizard} from "react-use-wizard";
 import {WizardStep} from "./WizardStep";
 import {Flex} from "@reverb-ui/react";
 import {ThemeWizardContext, ThemeWizardProvider} from "./ThemeWizardProvider";
+import { WizardConfigStep } from './WizardConfigStep';
 
 export const ThemeWizard = () => {
   return (
@@ -19,6 +20,7 @@ export const ThemeWizard = () => {
         <ThemeWizardContext.Consumer>
           {({ steps }) => (
             <Wizard>
+              <WizardConfigStep />
               {steps.map((step) => (
                 <WizardStep step={step} key={step.name} />
               ))}

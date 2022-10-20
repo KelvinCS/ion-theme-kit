@@ -1,0 +1,217 @@
+/* ======================================
+	ThemeName Theme.css
+
+    Created : Author 04/02/2020
+    Last Updated : Author 04/02/2020
+====================================== */
+.pf_form_table {
+  clear: both;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 1em 0;
+  padding: 10px 7px;
+  width: 100%;
+}
+.pf_form_table .pf_field_row {
+  margin: 0.25em 0;
+  vertical-align: middle;
+}
+.pf_form_table .pf_field_cell,
+.pf_form_table .pf_field_cell_bad {
+  padding-bottom: 10px;
+}
+.pf_form_table .pf_prefield_cell_empty {
+  display: hidden;
+}
+.pf_form_table .pf_label_cell {
+  padding: 0.3em 0.6em;
+  text-align: right;
+}
+.pf_form_table .pf_label_text {
+  color: #000;
+}
+.pf_form_table .pf_hint_text,
+.pf_form_table .pf_hint_text_bad {
+  display: block;
+}
+.pf_form_table .pf_text,
+.pf_form_table .pf_text_narrow,
+.pf_form_table .pf_text_wide,
+.pf_form_table .pf_multiline,
+.pf_form_table .pf_multiline_narrow,
+.pf_form_table .pf_multiline_wide {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #FFF;
+  border: 2px solid #8a9a9a;
+  color: #000;
+  font-size: 1em;
+  padding: 10px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.pf_form_table .pf_text:hover,
+.pf_form_table .pf_text_narrow:hover,
+.pf_form_table .pf_text_wide:hover,
+.pf_form_table .pf_multiline:hover,
+.pf_form_table .pf_multiline_narrow:hover,
+.pf_form_table .pf_multiline_wide:hover,
+.pf_form_table .pf_text:focus,
+.pf_form_table .pf_text_narrow:focus,
+.pf_form_table .pf_text_wide:focus,
+.pf_form_table .pf_multiline:focus,
+.pf_form_table .pf_multiline_narrow:focus,
+.pf_form_table .pf_multiline_wide:focus {
+  /*Change elements on hover and focus*/
+}
+.pf_form_table .pf_field_cell select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #FFF;
+  background-image: url('icon_select.png');
+  background-position: 99% 48%;
+  background-repeat: no-repeat;
+  border: 2px solid #8a9a9a;
+  color: #000;
+  display: inline-block;
+  font-size: 1em;
+  outline: none;
+  padding: 8px 20px 8px 5px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  text-indent: 0.01px;
+  text-overflow: '';
+  background-image: none\9;
+  padding: 5px 5px 5px 5px\9;
+}
+.pf_form_table .pf_field_cell select::-ms-expand {
+  display: none;
+}
+.pf_form_table .pf_field_cell select:-moz-focusring,
+.pf_form_table .pf_field_cell select::-moz-focusring {
+  outline: none !important;
+  border: none !important;
+  color: #000;
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 0 #000;
+}
+.pf_form_table .pf_field_cell select:hover {
+  color: #000;
+  background-color: #FFF;
+}
+.pf_form_table .pf_field_cell select:focus {
+  color: #000 !important;
+}
+.pf_form_table .pf_field_cell option:-moz-focusring,
+.pf_form_table .pf_field_cell option::-moz-focusring {
+  outline: none !important;
+  border: none !important;
+  color: #000;
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 0 #000;
+}
+.pf_form_table .pf_field_cell_bad select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #FFF;
+  background-image: url('icon_select.png');
+  background-position: 99% 48%;
+  background-repeat: no-repeat;
+  border: 1px solid #B32F3D;
+  color: #B32F3D;
+  font-size: 1em;
+  outline: none;
+  padding: 8px 20px 8px 5px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  text-indent: 0.01px;
+  text-overflow: '';
+  background-image: none\9;
+  padding: 5px 5px 5px 5px\9;
+}
+.pf_form_table .pf_field_cell_bad select::-ms-expand {
+  display: none;
+}
+.pf_form_table .pf_field_cell_bad select:-moz-focusring,
+.pf_form_table .pf_field_cell_bad select::-moz-focusring {
+  outline: none !important;
+  border: none !important;
+  color: #000;
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 0 #000;
+}
+.pf_form_table .pf_field_cell_bad select:hover {
+  color: #000;
+  background-color: #FFF;
+}
+.pf_form_table .pf_field_cell_bad select:focus {
+  color: #000 !important;
+}
+.pf_form_table .pf_field_cell_bad option:-moz-focusring,
+.pf_form_table .pf_field_cell_bad option::-moz-focusring {
+  outline: none !important;
+  border: none !important;
+  color: #000;
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 0 #000;
+}
+.pf_form_table .pf_text,
+.pf_form_table .pf_multiline,
+.pf_form_table .pf_dropdown {
+  width: 80%;
+}
+.pf_form_table .pf_text_narrow,
+.pf_form_table .pf_multiline_narrow,
+.pf_form_table .pf_dropdown_narrow {
+  width: 50%;
+}
+.pf_form_table .pf_text_wide,
+.pf_form_table .pf_multiline_wide,
+.pf_form_table .pf_dropdown_wide {
+  width: 100%;
+}
+.pf_form_table .pf_field_row_bad .pf_text,
+.pf_form_table .pf_field_row_bad .pf_text_narrow,
+.pf_form_table .pf_field_row_bad .pf_text_wide,
+.pf_form_table .pf_field_row_bad .pf_multiline,
+.pf_form_table .pf_field_row_bad .pf_multiline_narrow,
+.pf_form_table .pf_field_row_bad .pf_multiline_wide {
+  background: #FFF url(formError.png) no-repeat right;
+  border: 1px solid #B32F3D;
+  padding: 10px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.pf_form_table .pf_field_cell_bad select {
+  color: #B32F3D;
+  border: 1px solid #B32F3D;
+}
+.pf_form_table .pf_label_cell_bad {
+  color: #B32F3D;
+  padding: 0.3em 0.6em;
+  text-align: right;
+}
+.pf_form_table .pf_field_row_bad {
+  color: #B32F3D;
+  vertical-align: middle;
+}
+.pf_form_table .pf_label_text_bad {
+  color: #B32F3D;
+}
+.pf_form_table .pf_submit_cell {
+  padding: 0.4em 0.5em;
+}
+.pf_form_table .pf_submit_cell .pf_submit_image {
+  border: none;
+}
+.pf_form_table img {
+  border: none;
+}

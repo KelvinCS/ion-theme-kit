@@ -1,0 +1,117 @@
+/* ======================================
+	Colors
+
+	REQUIRED CLASS - .color-a, .color-b
+
+    NOTE: These 2 required class (a & b) style values should not change. 
+    They should be always be White and black.
+====================================== */
+
+.color-a {
+    color: @color-white !important;
+    
+    h1,h2,h3,h4,h5,h6,a,p {
+        color: @color-white !important;
+    }
+}
+
+.color-b {
+    color: @color-black !important;
+    
+    h1,h2,h3,h4,h5,h6,a,p {
+        color: @color-black !important;
+    }
+}
+
+.color-c {
+    color: @color-a !important;
+    h1,h2,h3,h4,h5,h6,a,p {
+        color: @color-a !important;
+    }
+}
+
+.color-d {
+    color: @color-b !important;
+    
+    h1,h2,h3,h4,h5,h6,a,p {
+        color: @color-b !important;
+    }
+}
+
+.color-e {
+    color: @color-c !important;
+    
+    h1,h2,h3,h4,h5,h6,a,p {
+        color: @color-c !important;
+    }
+}
+
+.color-f {
+    color: @color-d !important;
+    
+    h1,h2,h3,h4,h5,h6,a,p {
+        color: @color-d !important;
+    }
+}
+
+.color-g {
+    color: @color-e !important;
+    
+    h1,h2,h3,h4,h5,h6,a,p {
+        color: @color-e !important;
+    }
+}
+.color-h {
+    color: @color-f !important;
+    
+    h1,h2,h3,h4,h5,h6,a,p {
+        color: @color-f !important;
+    }
+}
+
+.color-i {
+    color: @color-g !important;
+    
+    h1,h2,h3,h4,h5,h6,a,p {
+        color: @color-g !important;
+    }
+}
+
+.color-j {
+    color: @color-h !important;
+    
+    h1,h2,h3,h4,h5,h6,a,p {
+        color: @color-h !important;
+    }
+}
+
+.color-k {
+    color: @color-i !important;
+    
+    h1,h2,h3,h4,h5,h6,a,p {
+        color: @color-i !important;
+    }
+}
+
+
+/* ======================================
+	Colors IXP Information
+====================================== */
+
+.color-a { .ixp-colors("@{color-white-name}"); }
+.color-b { .ixp-colors("@{color-black-name}"); }
+
+// Primary
+.color-c { .ixp-colors("@{color-a-name}"); }
+.color-d { .ixp-colors("@{color-b-name}"); }
+.color-e { .ixp-colors("@{color-c-name}"); }
+.color-f { .ixp-colors("@{color-d-name}"); }
+
+// Secondary
+.color-j { .ixp-colors("@{color-h-name}"); }
+.color-k { .ixp-colors("@{color-i-name}"); }
+
+// Neutral
+.color-g { .ixp-colors("@{color-e-name}"); }
+.color-h { .ixp-colors("@{color-f-name}"); }
+.color-i { .ixp-colors("@{color-g-name}"); }

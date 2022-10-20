@@ -1,0 +1,350 @@
+// ======================================
+//	Helpers
+// ======================================
+
+.button-selector(@button-name) {
+  & when(@button-name = button-a) { .button-a(); }
+  & when(@button-name = button-b) { .button-b(); }
+  & when(@button-name = button-c) { .button-c(); }
+  & when(@button-name = button-d) { .button-d(); }
+  & when(@button-name = button-e) { .button-e(); }
+  & when(@button-name = button-f) { .button-f(); }
+}
+
+// ======================================
+//	Pods
+// ======================================
+
+.pod-theme-selector(@theme;@pod-background) {
+  & when(@theme = light) {
+    .pod-mixin(
+      @pod-background;
+      @pod-color-light;
+      @pod-link-color-light;
+      @pod-link-color-hover-light;
+      @pod-button-1-light;
+      @pod-button-2-light;
+    );
+  }
+  & when(@theme = dark) {
+    .pod-mixin(
+      @pod-background;
+      @pod-color-dark;
+      @pod-link-color-dark;
+      @pod-link-color-hover-dark;
+      @pod-button-1-dark;
+      @pod-button-2-dark;
+    );
+  }
+}
+.pod-mixin(@pod-background;@pod-color;@pod-link-color;@pod-link-color-hover;@pod-button-1;@pod-button-2) {
+  background: @pod-background;
+  color: @pod-color;
+  h1, h2, h3, h4, h5, h6, p, .pf_form_table, .pf_form_table .pf_label_text {
+    color: @pod-color;
+  }
+  a {
+    color: @pod-link-color;
+    &:hover {
+      color: @pod-link-color-hover;
+    }
+  }
+
+  .generic-fill {
+    .button-selector(@pod-button-1);
+  }
+  .generic-outline {
+    .button-selector(@pod-button-2);
+  }
+}
+
+
+// ======================================
+//	Regions
+// ======================================
+
+.region-theme-selector(@theme;@region-background;@region-padding;@region-font-size) {
+  & when(@theme = light) {
+    .region-mixin(
+      @region-background;
+      @region-padding;
+      @region-font-size;
+      @region-color-light;
+      @region-link-color-light;
+      @region-link-color-hover-light;
+      @region-button-1-light;
+      @region-button-2-light;
+    );
+  }
+  & when(@theme = dark) {
+    .region-mixin(
+      @region-background;
+      @region-padding;
+      @region-font-size;
+      @region-color-dark;
+      @region-link-color-dark;
+      @region-link-color-hover-dark;
+      @region-button-1-dark;
+      @region-button-2-dark;
+    );
+  }
+}
+.region-mixin(@region-background;@region-padding;@region-font-size;@region-color;@region-link-color;@region-link-color-hover;@region-button-1;@region-button-2) {
+  padding: @region-padding;
+  font-size: @region-font-size;
+
+  .pod-mixin(@region-background;@region-color;@region-link-color;@region-link-color-hover;@region-button-1;@region-button-2);
+}
+
+// ======================================
+//	Icons
+// ======================================
+
+.font-icon() {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration:none;
+    display:inline-block;
+}
+
+// Bullet Icon A
+.li-icon-a(@position) {
+    background-image: url('@li-a-URL}');
+    background-position: @position;
+    background-repeat: no-repeat;
+}
+
+// A Icon Button
+.icon-a() {
+    background-image: url('@{icon-btn-a-URL}');
+    background-position: @icon-btn-x @icon-btn-y;
+    background-repeat: no-repeat;
+}
+
+// B Icon Button
+.icon-b() {
+    background-image: url('@{icon-btn-b-URL}');
+    background-position: @icon-btn-x @icon-btn-y;
+    background-repeat: no-repeat;
+}
+
+// C Icon Button
+.icon-c() {
+    background-image: url('@{icon-btn-c-URL}');
+    background-position: @icon-btn-x @icon-btn-y;
+    background-repeat: no-repeat;
+}
+
+// D Icon Button
+.icon-d() {
+    background-image: url('@{icon-btn-d-URL}');
+    background-position: @icon-btn-x @icon-btn-y;
+    background-repeat: no-repeat;
+}
+
+// ======================================
+//	General
+// ======================================
+
+// border radius
+.border-radius(@radius: 5px) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+}
+
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow;
+       -moz-box-shadow: @shadow;
+            box-shadow: @shadow;
+}
+
+.box-sizing() {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;  
+    box-sizing: border-box; 
+}
+
+.gradient (@startColor: @color-white, @endColor: #f2f2f2) {
+	background-color: @startColor;
+	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+	background: -webkit-linear-gradient(top, @startColor, @endColor);
+	background: -moz-linear-gradient(top, @startColor, @endColor);
+	background: -ms-linear-gradient(top, @startColor, @endColor);
+	background: -o-linear-gradient(top, @startColor, @endColor);
+}
+
+.gradient-icon (@startColor: @color-a, @endColor: @color-b, @iconURL: @icon-btn-a-URL) {
+background: url(@iconURL) no-repeat 10px 48%, @startColor;
+    background: url(@iconURL) no-repeat 10px 48%, -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+    background: url(@iconURL) no-repeat 10px 48%, -webkit-linear-gradient(top, @startColor, @endColor);
+    background: url(@iconURL) no-repeat 10px 48%, -moz-linear-gradient(top, @startColor, @endColor);
+    background: url(@iconURL) no-repeat 10px 48%, -ms-linear-gradient(top, @startColor, @endColor);
+    background: url(@iconURL) no-repeat 10px 48%, -o-linear-gradient(top, @startColor, @endColor);
+}
+
+.placeholder(@color) {
+    &:-moz-placeholder { // deprecated
+        color: @color;
+    }
+    &::-moz-placeholder { // new
+        color: @color;
+    }
+    &::-webkit-input-placeholder {
+        color: @color;
+    }
+    &:-ms-input-placeholder {
+        color: @color;
+    }
+    &::input-placeholder {
+        color: @color;
+    }
+}
+
+.appearance(@style) {
+    -webkit-appearance: @style;
+    -moz-appearance: @style;
+    appearance: @style;
+}
+
+.rotate(@degrees) {
+    -webkit-transform: rotate(@degrees);
+    -moz-transform: rotate(@degrees);
+    -ms-transform: rotate(@degrees);
+    -o-transform: rotate(@degrees);
+    transform: rotate(@degrees);
+}
+
+.box-sizing(@type) {
+    -webkit-box-sizing: @type;
+    -moz-box-sizing: @type;
+    box-sizing: @type;
+}
+
+.backface-visibility(@style) {
+    -webkit-backface-visibility: @style;
+    -moz-backface-visibility: @style;
+    -ms-backface-visibility: @style;
+    backface-visibility: @style;
+}
+
+.perspective(@style) {
+    -webkit-perspective: @style;
+    -moz-perspective: @style;
+    -ms-perspective: @style;
+    perspective: @style;
+}
+
+// ======================================
+//  Transforms & Transitions
+// ======================================
+
+
+.transition(@transition:all 0.3s ease) {
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
+}
+
+
+.transform(@transform) {
+    -webkit-transform: @transform;
+    -moz-transform: @transform;
+    -ms-transform: @transform;
+    -o-transform: @transform;
+    transform: @transform;
+}
+
+.transform-style(@style) {
+    -webkit-transform-style: @style;
+    -moz-transform-style: @style;
+    -ms-transform-style: @style;
+    transform-style: @style;
+}
+
+.user-select(@select) {
+    -webkit-user-select: @select;
+    -moz-user-select: @select;
+    -ms-user-select: @select;
+    -o-user-select: @select;
+    user-select: @select;
+}
+
+.transitions(@transition) {
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
+}
+
+
+// ---------------------------------
+
+// EXPERIMENTAL FEATURES (Via Keith for ixp-brand-form)
+.viewport(@width: device-width, @zoom: fixed) {
+    @-ms-viewport {
+        width: device-width;
+        user-zoom: fixed;
+    }
+    @-o-viewport {
+        width: device-width;
+        user-zoom: fixed;
+    }
+    @viewport {
+        width: device-width;
+        user-zoom: fixed;
+    }
+}
+
+// ======================================
+// The following are utilities for use in certain cases. Do not edit or remove these.
+// ======================================
+
+
+// ======================================
+//  Descendant Selectors
+// ======================================
+
+@form-button:               ~'.pf_form_table .pf_submit_cell .pf_submit_button';
+
+// ======================================
+//	IE Classes. These classes are added by the ion platform. When using CSS that does not render In IE 9 or below, you can add additional code for these browsers. For an example, with gradient buttons, we use these to display a flat button in IE 9 or below.
+// ======================================
+
+@lt-ie9: ~'html.ixp-lt-ie9';
+@gte-ie9: ~'html:not(.ixp-lt-ie9)';
+
+// ========================================================
+// IE SUPPORT
+// ========================================================
+
+//@lt-ie9:            ~'.ixp-experience.ixp-lt-ie9';
+//@gte-ie9:           ~'.ixp-experience:not(.ixp-lt-ie9)';
+
+.support-lt-ie9(@rules, @wrap: true) when (@support-lt-ie9) {
+    & when (@wrap) {
+        @{lt-ie9} & {
+            @rules();
+        }
+    }
+    & when not (@wrap) {
+        @rules();
+    }
+}
+// ======================================
+//	Retina Image Media Query
+//
+//	USE: @media @retinaDetect { ... }
+//
+//	NOTE: Use double the px size images
+// ======================================
+
+@retinaDetect:              ~"(-webkit-min-device-pixel-ratio: 2)",
+                            ~"(min-resolution: 192dppx)",
+                            ~"(-moz-min-device-pixel-ratio: 2)", // old
+                            ~"(min--moz-device-pixel-ratio)",    // new
+                            ~"(-o-min-device-pixel-ratio: 2)",
+                            ~"(min-device-pixel-ratio: 2)";
+

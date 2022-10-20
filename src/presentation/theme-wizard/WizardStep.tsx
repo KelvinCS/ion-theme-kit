@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, {useContext, useMemo} from 'react'
 import {useWizard} from "react-use-wizard";
 import {Box, Button, Flex, Grid, Text} from "@reverb-ui/react";
 import {ThemeWizardContext, TWizardStepWithState} from "./ThemeWizardProvider";
@@ -9,8 +9,9 @@ export type TWizardStepProps = {
 }
 
 export const WizardStep = ({ step }: TWizardStepProps) => {
-  const { previousStep, nextStep } = useWizard();
-  const { setFieldState } = useContext(ThemeWizardContext);
+  const { previousStep, nextStep, isLastStep } = useWizard();
+  const { setFieldState, finishWizard } = useContext(ThemeWizardContext);
+
 
   return (
     <Flex direction="column" gap={3} w="800px" h="600px" overflow="hidden" bg="gray.50" boxShadow="md" rounded="md">
@@ -54,7 +55,13 @@ export const WizardStep = ({ step }: TWizardStepProps) => {
       <Flex justifyContent="end" bg="white" py={4} px={6} borderTopWidth={1}>
         <Flex gap={2}>
           <Button onClick={previousStep}>Previous</Button>
-          <Button onClick={nextStep}>Next</Button>
+          {isLastStep ? (
+            <Button colorScheme="blue" onClick={finishWizard}>Finish</Button>
+          ) :
+            (
+              <Button onClick={nextStep}>Next</Button>
+            )
+          }
         </Flex>
       </Flex>
     </Flex>

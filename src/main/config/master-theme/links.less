@@ -1,0 +1,140 @@
+  /* ======================================
+	Link Element Base
+====================================== */
+
+a {
+    color: @link-color;
+    display: inline;
+    text-decoration: @link-text;
+    .transition(@link-transition);
+    font-family: @link-font-family;
+    font-weight: @link-font-weight;
+
+    &:hover {
+        color: @link-color-hover;
+        text-decoration: @link-hover-text;
+    }
+}
+
+/* ======================================
+	CTA Links
+
+	REQUIRED CLASS: .cta_link.link-a
+====================================== */
+
+.cta_link {
+    display: inline-block;
+    &:after,
+    &:before {
+         .font-icon();
+         margin:0 0 0 @icon-cta-spacing;
+    }
+    
+    &:before {
+    }
+
+    // ======================================
+    //	cta link a
+    // ======================================
+
+    &.link-a {
+        color: @cta-icon-a-color;
+        text-decoration: @cta-link-text;
+
+        &:hover {
+            color: @cta-icon-a-color-hover;
+            text-decoration: @cta-link-hover-text;
+        }
+        
+        &:after {
+            content:'@{cta-icon-a}';
+        }
+    }
+
+    // ======================================
+    //	cta link b
+    // ======================================
+
+    &.link-b {
+        color: @cta-icon-b-color;
+        text-decoration: @cta-link-text;
+
+        &:hover {
+            color: @cta-icon-b-color-hover;
+            text-decoration: @cta-link-hover-text;
+        }
+        &:before {
+            content:'@{cta-icon-b}';
+            margin-left:0;
+            margin-right:@icon-cta-spacing;
+        }
+    }
+    
+    // ======================================
+    //	cta link c
+    // ======================================
+
+    &.link-c {
+        color: @cta-icon-c-color;
+        text-decoration: @cta-link-text;
+
+        &:hover {
+            color: @cta-icon-c-color-hover;
+            text-decoration: @cta-link-hover-text;
+        }
+        &:after {
+            content:'@{cta-icon-c}';
+        }
+    }
+    
+    // ======================================
+    //	cta link d
+    // ======================================
+
+    &.link-d {
+        color: @cta-icon-d-color;
+        text-decoration: @cta-link-text;
+
+        &:hover {
+            color: @cta-icon-c-color-hover;
+            text-decoration: @cta-link-hover-text;
+        }
+        &:after {
+            content:'@{cta-icon-d}';
+        }
+    }
+
+    // ======================================
+    //	cta link e
+    // ======================================
+
+    &.link-e {
+        color: @cta-icon-e-color;
+        text-decoration: @cta-link-text;
+
+        &:hover {
+            color: @cta-icon-e-color-hover;
+            text-decoration: @cta-link-hover-text;
+        }
+        &:before {
+            content:'@{cta-icon-e}';
+            margin-left:0;
+            margin-right:@icon-cta-spacing;
+        }
+    }
+
+}
+
+/* ======================================
+	Links IXP Information
+
+	REQUIRED CLASS: .cta_link.link-a
+====================================== */
+
+.cta_link {
+    &.link-a { .ixp-link("@{cta-icon-a-name} Link"); }
+    &.link-b { .ixp-link("@{cta-icon-b-name} Link"); }
+    &.link-c { .ixp-link("@{cta-icon-c-name} Link"); }
+    &.link-d { .ixp-link("@{cta-icon-d-name} Link"); }
+    &.link-e { .ixp-link("@{cta-icon-e-name} Link"); }
+}

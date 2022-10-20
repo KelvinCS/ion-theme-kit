@@ -1,4 +1,5 @@
 import React, {useEffect, useMemo, useState} from 'react';
+import { sendWizard, TSendWizardConfig } from '../../api/wizard';
 import {TWizardStep, TWizardStepField, TWizardStepSection} from "../../domain/entities/wizard-step";
 import {wizardSteps} from "../../main/config/wizard-steps";
 
@@ -12,8 +13,11 @@ export type TWizardStepWithState = TWizardStep & {
 }
 
 export type TThemeWizardProviderState = {
+  finishWizard: () => void,
+  config: TSendWizardConfig,
   steps: TWizardStepWithState[],
   setFieldState: (variableName: string, value: any) => void,
+  setConfigField: (variable: keyof TSendWizardConfig, value: any) => void,
 }
 
 export type TThemeWizardProviderProps = {
@@ -22,7 +26,10 @@ export type TThemeWizardProviderProps = {
 
 const initialValue: TThemeWizardProviderState = {
   steps: [],
-  setFieldState: () => null
+  config: {},
+  setFieldState: () => null,
+  setConfigField: () => null,
+  finishWizard: () => Promise<any>,
 }
 
 export const ThemeWizardContext = React.createContext<TThemeWizardProviderState>(initialValue)
@@ -30,6 +37,10 @@ export const ThemeWizardContext = React.createContext<TThemeWizardProviderState>
 export const ThemeWizardProvider = ({children}: TThemeWizardProviderProps) => {
 
   const [stepsState, setStepsState] = useState<Record<string, string>>({})
+  const [wizardConfig, setWizardConfig] = useState<TSendWizardConfig>({
+    responsive: true,
+    supportsGrid: true
+  })
 
   const setFieldState = (variableName: string, value: any) => {
     setStepsState((state) => ({
@@ -38,9 +49,20 @@ export const ThemeWizardProvider = ({children}: TThemeWizardProviderProps) => {
     }))
   }
 
-  useEffect(() => {
-    console.log(stepsState)
-  }, [stepsState])
+  const setConfigField = (variable: keyof TSendWizardConfig, value: any) => {
+    setWizardConfig((config) => ({
+      ...config,
+      [variable]: value
+    }))
+  }
+
+  useEffect(() => {console.log(stepsState)}, [stepsState])
+
+  const finishWizard = () => {
+    sendWizard({ variables: stepsState, config: wizardConfig })
+      .then(console.log)
+  }
+
 
   const steps: TWizardStepWithState[] = useMemo(() => {
     return wizardSteps.map((step) => {
@@ -71,7 +93,10 @@ export const ThemeWizardProvider = ({children}: TThemeWizardProviderProps) => {
   return (
     <ThemeWizardContext.Provider value={{
       setFieldState,
-      steps
+      steps,
+      finishWizard,
+      config: wizardConfig, 
+      setConfigField
     }}>
       {children}
     </ThemeWizardContext.Provider>

@@ -1,0 +1,269 @@
+// ======================================
+//	IXP
+// ======================================
+
+// accordion rmw
+.ixp-accordion(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Accordion";
+    -ixp-group: "accordion";
+    -ixp-scope: "Accordion, accordion_v3";
+}
+
+// animation
+.ixp-animation(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Animation";
+    -ixp-group: "animation";
+    -ixp-scope: "ContainerLike,StyleOnly,Text,Image,Link";
+}
+
+// background
+.ixp-background(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Backgrounds";
+    -ixp-group: "background";
+    -ixp-scope: "ContainerLike,StyleOnly,CustomForm,ChoiceGroup,Flow,FlowStep,FullPageSection,FullPageSubsection";
+}
+
+// button
+.ixp-button(@name, @button, @size) {
+    .button.button-@{button}.button-@{size} {
+         -ixp-name: "@{name}";
+         -ixp-tags: "Buttons";
+        -ixp-group: "buttons";
+        -ixp-scope: "Link,Text";
+    }
+
+    .button-container.button-container-@{button}.button-container-@{size} {
+        -ixp-name: "@{name}";
+        -ixp-tags: "Buttons";
+        -ixp-group: "buttons";
+        -ixp-scope: "Form,Lightbox";
+    }
+}
+
+// button icon
+.ixp-button-icon(@name, @button, @size, @icon) {
+    .button.button-@{button}.button-@{size}.button-@{icon} {
+         -ixp-name: "@{name}";
+         -ixp-tags: "Buttons";
+        -ixp-group: "buttons";
+        -ixp-scope: "Link,Text";
+    }
+
+    .button-container.button-container-@{button}.button-container-@{size}.button-container-@{icon} {
+        -ixp-name: "@{name}";
+        -ixp-tags: "Buttons";
+        -ixp-group: "buttons";
+        -ixp-scope: "Form,Lightbox";
+    }
+}
+
+// button directional
+.ixp-button-directional(@name, @button) {
+    .button-@{button} {
+         -ixp-name: "@{name}";
+         -ixp-tags: "Directional Buttons";
+        -ixp-group: "directional-buttons";
+        -ixp-scope: "Link,Text";
+    }
+
+    .button-container-@{button} {
+        -ixp-name: "@{name}";
+         -ixp-tags: "Directional Buttons";
+        -ixp-group: "directional-buttons";
+        -ixp-scope: "Lightbox";
+    }
+}
+
+// --------------------------------------
+// Brand Form
+// --------------------------------------
+.m-define-form-microtheme(@classEnding, @label: false, @isDefault: false) {
+    @form-microtheme-name-lower: e(`'@{classEnding}'.toLowerCase()`);
+    @form-microtheme-selector: %(~".ixp-component-form-style-brand-%s", @form-microtheme-name-lower);
+    @form-microtheme-dropdown-menu-selector: %(~".ixp-component-dropdown-menu-brand-%s", @form-microtheme-name-lower);
+
+    & when not (@label = false) {
+        @form-microtheme-title: %("Style: %s", @label);
+        @{form-microtheme-selector} {
+            -ixp-name: @form-microtheme-title;
+            -ixp-tags: "Form";
+            -ixp-group: "customform";
+            -ixp-scope: "CustomForm";
+            & when not (@isDefault = false) {
+                -ixp-default: "true";
+            }
+        }
+    }
+}
+
+// colors
+.ixp-colors(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Color";
+    -ixp-group: "color";
+    -ixp-scope: "Text,Link";
+}
+
+// font
+.ixp-font(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Fonts";
+    -ixp-group: "font";
+    -ixp-scope: "ContainerLike,Text,Link";
+}
+
+// font-sm
+.ixp-font-sm(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "FontsSM";
+    -ixp-group: "fontsm";
+    -ixp-scope: "ContainerLike,Text,Link";
+}
+
+// font-xs
+.ixp-font-xs(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "FontsXS";
+    -ixp-group: "fontxs";
+    -ixp-scope: "ContainerLike,Text,Link";
+}
+
+// image align (float)
+.ixp-align-img(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Images";
+    -ixp-group: "images";
+    -ixp-scope: "Image";
+}
+
+// navigation
+.ixp-navigation(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Navigation";
+    -ixp-group: "navigation";
+    -ixp-scope: "Navigation";
+}
+
+// nav list item
+.ixp-navitem(@name) {
+	-ixp-name: @name;
+	-ixp-tags: "Navigation";
+	-ixp-group: "navigation";
+	-ixp-scope: "NavigationItem";
+}
+
+// pod
+.ixp-pod(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Pods";
+    -ixp-group: "pods";
+    -ixp-scope: "ContainerLike,StyleOnly,CustomForm,ChoiceGroup,Flow,FlowStep,FullPageSection,FullPageSubsection";
+}
+
+// text
+.ixp-text(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Text";
+    -ixp-group: "text";
+    -ixp-scope: "Text,Link";
+}
+
+// link
+.ixp-link(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Link";
+    -ixp-group: "link";
+    -ixp-scope: "Link,Lightbox";
+}
+
+// logo
+.ixp-logo(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Logo";
+    -ixp-group: "logo";
+    -ixp-scope: "ContainerLike,Link";
+}
+
+// region with container
+.ixp-regions-c(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Regions";
+    -ixp-group: "regions";
+    -ixp-scope: "Container";
+}
+
+// region with container-like
+.ixp-regions-cl(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Regions";
+    -ixp-group: "regions";
+    -ixp-scope: "ContainerLike";
+}
+
+// styling
+.ixp-styling(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Styling";
+    -ixp-group: "styling";
+    -ixp-scope: "Image,Link,Container,Column,Row";
+}
+
+// styling 2nd
+.ixp-styling2(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Styling";
+    -ixp-group: "styling";
+    -ixp-scope: "Image,Link,Container,Column,Row";
+}
+
+// styling 3rd
+.ixp-styling3(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Styling";
+    -ixp-group: "styling";
+    -ixp-scope: "Image,Link,Container,Column,Row";
+}
+
+// tabs rmw
+.ixp-tabs(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Tabs";
+    -ixp-group: "tabs";
+    -ixp-scope: "Tabs, tabs_v3";
+}
+
+// text bullet
+.ixp-bullet(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Bullet list";
+    -ixp-group: "bullet-list";
+    -ixp-scope: "Text";
+}
+
+// text align (all types)
+.ixp-align(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Alignment";
+    -ixp-group: "alignment";
+    -ixp-scope: "Text,Link,ContainerLike";
+}
+
+// text-align (basic text)
+.ixp-align-text(@name) {
+     -ixp-name: @name;
+     -ixp-tags: "Alignment";
+    -ixp-group: "alignment";
+    -ixp-scope: "Text";
+}
+
+// utilities
+.ixp-utility(@name, @group) {
+     -ixp-name: @name;
+     -ixp-tags: "Utilities";
+    -ixp-group: @group;
+    -ixp-scope: "ContainerLike";
+}
+

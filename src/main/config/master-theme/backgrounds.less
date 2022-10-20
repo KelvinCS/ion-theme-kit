@@ -1,0 +1,89 @@
+/* ======================================
+	Backgrounds
+
+	REQUIRED CLASSES:
+	.background-a,
+	.background-b,
+	.background-c
+
+    NOTE: These,required, 3 class (a,b, and c) style values should not change. 
+    They should be White, Transparent White and Transparent Black always.
+====================================== */
+
+.background-a {
+    background: @color-white; 
+}
+
+.background-b {
+    background: @color-white;
+    background: rgba(255, 255, 255, .50);
+}
+
+.background-c {
+    background: @color-black;
+    background: rgba(0, 0, 0, .40);
+}
+
+.background-d {
+    background: @color-black;
+}
+
+.background-e {
+    background: @color-a;
+}
+
+.background-f {
+    background: @color-b;
+}
+
+.background-g {
+    background: @color-c;
+}
+
+.background-h {
+    background: @color-d;
+}
+
+.background-i {
+    background: @color-e;
+}
+
+.background-j {
+    background: @color-f;
+}
+
+.background-k {
+    background: @color-g;
+}
+
+.background-l {
+    background: @color-h;
+}
+
+.background-m {
+    background: @color-i;
+}
+
+/* ======================================
+	Background IXP Information
+====================================== */
+
+.background-a { .ixp-background("@{color-white-name} Background"); }
+.background-b { .ixp-background("@{color-white-name} Transparent Background"); }
+.background-d { .ixp-background("@{color-black-name} Background"); }
+.background-c { .ixp-background("@{color-black-name} Transparent Background"); }
+
+// Primary
+.background-e { .ixp-background("@{color-a-name} Background"); }
+.background-f { .ixp-background("@{color-b-name} Background"); }
+.background-g { .ixp-background("@{color-c-name} Background"); }
+.background-h { .ixp-background("@{color-d-name} Background"); }
+
+// Secondary
+.background-l { .ixp-background("@{color-h-name} Background"); }
+.background-m { .ixp-background("@{color-i-name} Background"); }
+
+// Neutral
+.background-i { .ixp-background("@{color-e-name} Background"); }
+.background-j { .ixp-background("@{color-f-name} Background"); }
+.background-k { .ixp-background("@{color-g-name} Background"); }

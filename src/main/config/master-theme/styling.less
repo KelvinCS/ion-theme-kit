@@ -1,0 +1,50 @@
+/* ======================================
+	Image and Block Styling
+
+	REQUIRED CLASS: .rounded-corners
+====================================== */
+
+.rounded-corners {
+  .border-radius(@rounded-corners);
+}
+
+.shadow-a {
+   .box-shadow(@shadow-a);
+}
+
+.shadow-b {
+   .box-shadow(@shadow-b);
+}
+
+.border-style-a {
+    border: @border-style-a;
+}
+
+.border-style-b {
+    border: @border-style-b;
+}
+/* ======================================
+	Image and Block IXP Information
+    REQUIRED CLASSES: .rounded-corners
+====================================== */
+
+.rounded-corners  {.ixp-styling("@{rounded-corners-name}");}
+.shadow-a {.ixp-styling2("@{shadow-a-name}");}
+.shadow-b {.ixp-styling2("@{shadow-b-name}");}
+.border-style-a {.ixp-styling3("@{border-style-a-name}");}
+.border-style-b {.ixp-styling3("@{border-style-b-name}");}
+
+/* ======================================
+	Horizontal Rule Styling
+====================================== */
+
+hr {
+    background: @hr-color;
+    border: none;
+    color: @hr-color;
+    clear: both;
+    float: none;
+    height: @hr-height;
+    margin: 0.4em 0;
+    width: 100%;
+}

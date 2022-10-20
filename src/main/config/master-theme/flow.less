@@ -1,0 +1,183 @@
+/* ======================================
+	Flow Styling
+====================================== */
+.ixp-component-flow {
+    &.ixp-component-flow-default {
+        // --------------------------------------------------------
+        // NUMBERS BASE
+        // --------------------------------------------------------
+
+        > .ixp-component-flow-progress {
+            font-size: @flow-number-font-size;
+
+            .ixp-component-flow-progress-toggle {
+                margin-left: @toggle-gutter;
+                margin-top: @toggle-gutter;
+                width: @toggle-size;
+                height: @toggle-size;
+                line-height: @toggle-size;
+                background: @flow-dot-bg;
+                color: @flow-dot-text;
+                background-image: none;
+                .transition(all .3s ease);
+                .border-radius(@toggle-radius);
+            }
+
+            &.ixp-component-flow-progress-clickable {
+                .ixp-component-flow-progress-toggle {
+                    &:hover {
+                    background: @flow-dot-bg-hover;
+                    color: @flow-dot-text-hover;
+                    }
+                }
+            }
+
+            // ACTIVE STATE
+            .ixp-component-flow-progress-toggle.ixp-component-flow-progress-active,
+            &.ixp-component-flow-progress-clickable .ixp-component-flow-progress-toggle.ixp-component-flow-progress-active,
+            &.ixp-component-flow-progress-clickable .ixp-component-flow-progress-toggle.ixp-component-flow-progress-active:hover {
+                background: @flow-dot-bg-active;
+                color: @flow-dot-text-active;
+            }
+        }
+    }
+
+    // --------------------------------------------------------
+    // DOTS SOLID
+    // --------------------------------------------------------
+    
+
+    // DOTS SOLID DARK, LIGHT
+    &.ixp-component-flow-dots-dark-solid,
+    &.ixp-component-flow-dots-light-solid,
+    &.ixp-component-flow-dots-light,
+    &.ixp-component-flow-dots-dark {
+
+        > .ixp-component-flow-progress {
+
+            .ixp-component-flow-progress-toggle {
+                margin-left: @dot-gutter;
+                margin-top: @dot-gutter;
+                padding: 0;
+                width: @dot-size;
+                height: @dot-size;
+                line-height: @dot-size;
+                text-indent: -9999px;
+                background: @flow-dot-bg-dark;
+                background-image:none;
+                &:hover {
+                    background: @flow-dot-bg-hover !important;
+                    border-color: @flow-dot-bg-hover !important;
+                }
+            }
+            // ACTIVE STATE
+            .ixp-component-flow-progress-toggle.ixp-component-flow-progress-active,
+            &.ixp-component-flow-progress-clickable .ixp-component-flow-progress-toggle.ixp-component-flow-progress-active,
+            &.ixp-component-flow-progress-clickable .ixp-component-flow-progress-toggle.ixp-component-flow-progress-active:hover {
+                width: (@dot-size - (@dot-focus-border-size * 2));
+                height: (@dot-size - (@dot-focus-border-size * 2));
+                border-style: solid;
+                border-width: @dot-focus-border-size;
+                border: @flow-dot-bg-active solid @dot-focus-border-size;
+                background-color: @flow-dot-bg-active;
+                opacity:1;
+            }
+        }
+    }
+    &.ixp-component-flow-dots-light,
+    &.ixp-component-flow-dots-dark {
+        > .ixp-component-flow-progress {
+            .ixp-component-flow-progress-toggle {
+                opacity:.75;
+            }
+        }
+        &.ixp-component-flow-progress-clickable {
+            .ixp-component-flow-progress-toggle {
+                &:hover {
+                opacity:.75;
+                }
+            }
+        }
+    }
+    // LIGHT
+    &.ixp-component-flow-dots-light-solid,
+    &.ixp-component-flow-dots-light {
+        > .ixp-component-flow-progress {
+            .ixp-component-flow-progress-toggle {
+                background:@flow-dot-bg;
+            }
+        }
+    }
+    // --------------------------------------------------------
+    // PROGRESS
+    // --------------------------------------------------------
+    
+    &.ixp-component-flow-bar-dark,
+    &.ixp-component-flow-bar-light  {
+        
+        > .ixp-component-flow-progress {
+            .ixp-component-flow-progress-inner {
+                background:none;
+            }
+            .ixp-component-flow-progress-toggle {
+                background: @flow-dot-bg-dark;
+                color: @flow-dot-bg-dark;
+                .border-radius(@progress-border-radius);
+                height: @progress-height;
+                line-height: @progress-height;
+                border: @progress-border !important;
+                margin: @progress-margin;
+            }
+
+            .ixp-component-flow-progress-toggle:first-child {
+                .border-radius(@progress-border-radius-corners 0 0 @progress-border-radius-corners) !important;
+            }
+
+            .ixp-component-flow-progress-toggle:last-child {
+                .border-radius(0 @progress-border-radius-corners @progress-border-radius-corners 0) !important;
+            }
+
+            &.ixp-component-flow-progress-clickable {
+                .ixp-component-flow-progress-toggle {
+                    &:hover {
+                        background: @flow-dot-bg-hover;
+                        color: @flow-dot-bg-hover;
+                    }
+                }
+            }
+            
+            // ACTIVE STATE
+            .ixp-component-flow-progress-toggle.ixp-component-flow-progress-active,
+            &.ixp-component-flow-progress-clickable .ixp-component-flow-progress-toggle.ixp-component-flow-progress-active,
+            &.ixp-component-flow-progress-clickable .ixp-component-flow-progress-toggle.ixp-component-flow-progress-active:hover {
+                background: @flow-dot-bg-active;
+                color: @flow-dot-bg-active;
+            }
+            
+            // DONE STATE
+            .ixp-component-flow-progress-done {
+                background: @flow-dot-bg-active !important;
+                color: @flow-dot-bg-active !important;
+                
+            }
+        }
+    }
+    &.ixp-component-flow-bar-light  {
+        > .ixp-component-flow-progress {
+
+            .ixp-component-flow-progress-toggle {
+                background: @flow-dot-bg;
+                color: @flow-dot-bg;
+            }
+        }
+    }
+}
+
+
+
+/* ======================================
+Custom flow fix for Firefox
+====================================== */
+.ixp-component-flow[data-ixp-flow-mode="normal"] > .ixp-component-flow-steps > .ixp-component-flow-step {
+-moz-transform-style: inherit;
+}

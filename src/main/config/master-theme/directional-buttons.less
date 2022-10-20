@@ -1,0 +1,136 @@
+/* ======================================
+	Directional Buttons
+
+	REQUIRED CLASS: none, these are optional for theme kits
+====================================== */
+.button-down-dark,
+.button-up-dark,
+.button-left-dark,
+.button-right-dark,
+.button-down-light,
+.button-up-light,
+.button-left-light,
+.button-right-light{
+       z-index: 100;
+    width: @directional-icon-width;
+    height: @directional-icon-height;
+    display: inline-block;
+    cursor: pointer;
+	position:relative;
+	text-indent: @directional-icon-height;
+	text-decoration:none !important;
+	font-size:0;
+    overflow: hidden;
+	&:after {
+		color:@color-a;
+		position:absolute;
+		top:0;
+		right:0;
+		font-size:@directional-icon-font-size;
+		margin:0;
+		line-height:1;
+        .font-icon();
+        .transition();
+    }
+}
+
+.button-down-dark {
+	&:after {
+        content: @directional-icon-down;
+        color:@dark-arrow-color;
+    }
+    &:hover{	
+        .transform(translateY(5px));			
+    }
+}
+
+.button-up-dark {
+	&:after {
+        content: @directional-icon-up;
+        color:@dark-arrow-color;
+    }
+    &:hover{
+        .transform(translateY(-5px));
+    }
+}
+
+.button-left-dark {
+	&:after {
+        content: @directional-icon-left;
+        color:@dark-arrow-color;
+    }
+    &:hover{
+        .transform(translateX(-5px));
+    }
+}
+
+.button-right-dark {
+	&:after {
+        content: @directional-icon-right;
+        color:@dark-arrow-color;
+    }
+    &:hover{
+        .transform(translateX(5px));
+    }
+}
+
+.button-down-light {
+	&:after {
+        content: @directional-icon-down;
+        color:@light-arrow-color;
+    }
+    &:hover{	
+        .transform(translateY(5px));			
+    }
+}
+
+.button-up-light {
+	&:after {
+        content: @directional-icon-up;
+        color:@light-arrow-color;
+    }
+    &:hover{
+        .transform(translateY(-5px));
+    }
+}
+
+.button-left-light{
+     &:after {
+        content: @directional-icon-left;
+         color:@light-arrow-color;
+    }
+    &:hover{
+        .transform(translateX(-5px));
+    }
+}
+
+.button-right-light {
+	&:after {
+        content: @directional-icon-right;
+        color:@light-arrow-color;
+    }
+    &:hover{
+        .transform(translateX(5px));
+    }
+}
+
+/* ======================================
+	Directional Button IXP Information
+====================================== */
+
+// Button Up Dark
+.ixp-button-directional('@{button-up-dark}', up-dark);
+// Button Down Dark
+.ixp-button-directional('@{button-down-dark}', down-dark);
+// Button Left Dark
+.ixp-button-directional('@{button-left-dark}', left-dark);
+// Button Right Dark
+.ixp-button-directional('@{button-right-dark}', right-dark);
+// Button Up Light
+.ixp-button-directional('@{button-up-light}', up-light);
+// Button Down Light
+.ixp-button-directional('@{button-down-light}', down-light);
+// Button Left Light
+.ixp-button-directional('@{button-left-light}', left-light);
+// Button Right Light
+.ixp-button-directional('@{button-right-light}', right-light);

@@ -1,0 +1,152 @@
+/* ======================================
+	Accordion RMW (Default)
+====================================== */
+
+.lbui_accordion_v3{
+
+ >.lbui_accordion_content{
+        
+        >div{
+            
+            >h2.lbui_trigger{
+                background: @accordion-toggle-background;
+                border: @accordion-border;
+                .border-radius(@accordion-border-radius);
+                color: @accordion-toggle-color;
+                filter: none;
+                font-size: @accordion-font-size;
+                height: auto;
+                font-family: @font-family-base;
+                margin: @accordion-margin;
+                padding: @accordion-padding;
+                .transition( background 0.3s ease);
+                .box-sizing();
+                position:relative;
+                
+                 &:after {
+                    .font-icon();
+                    content:@accordion-closed-icon;
+                    margin-right:0.25em;
+                     width:1em;
+                     position: absolute;
+                     display: block;
+                     top: 50%;
+                     -webkit-transform: translateY(-50%);
+                     -moz-transform: translateY(-50%);
+                     -ms-transform: translateY(-50%);
+                     transform: translateY(-50%);
+                     right:10px;
+                }
+            }
+        }
+        
+          .lbui_trigger{
+            
+            &.lbui_active {
+                background: @accordion-active-background;
+                border: @accordion-active-border;
+                color: @accordion-active-color;
+                filter: none;
+                    &:after {content:@accordion-open-icon;}
+                    &:hover {
+                        background-color: @accordion-hover-background;
+                        border: @accordion-hover-border;
+                        color: @accordion-hover-color;
+                        filter: none;
+                        &:after {content:@accordion-open-icon;}
+            }
+            }
+
+            &:hover {
+                background: @accordion-hover-background;
+                border: @accordion-hover-border;
+                color: @accordion-hover-color;
+                filter: none;
+                &:after {content:@accordion-closed-icon;}
+            }
+        }
+    }
+}
+
+.lbui_toggle_container {
+  margin-top: 0;
+  font-size: @accordion-slide-font-size !important;
+}	
+
+/* ======================================
+	Accordion RMW (Alternate)
+====================================== */
+
+.accordion-a {
+    &.lbui_accordion_v3{
+        .box-shadow(@accordion-a-box-shadow);
+
+ >.lbui_accordion_content{
+        padding: 0 !important;
+        >div{
+            
+            >h2.lbui_trigger{
+                background: @accordion-a-toggle-background !important;
+                border-bottom: @accordion-a-border;
+                color: @accordion-a-toggle-color;
+                filter: none;
+                margin-bottom:0;
+                .border-radius(0);
+                padding:@accordion-padding-a;
+                
+                &:before {
+                    .font-icon();
+                    content:@accordion-a-closed-icon;
+                    position: absolute;
+                     display: block;
+                     top: 50%;
+                     -webkit-transform: translateY(-50%);
+                     -moz-transform: translateY(-50%);
+                     -ms-transform: translateY(-50%);
+                     transform: translateY(-50%);
+                     left:10px;
+                }
+                &:after {
+                    display:none !important;
+                }
+            }
+            >h2.lbui_trigger:last{
+                border-bottom:none !important;
+            }
+        }
+        
+          .lbui_trigger{
+            
+            &.lbui_active {
+                background: @accordion-a-active-background !important;
+                border-color: @accordion-a-active-background !important;
+                color: @accordion-a-active-color;
+                filter: none;
+                    &:before {content:@accordion-a-open-icon;}
+                    &:hover {
+                        background: @accordion-a-hover-background !important;
+                        border-color: @accordion-a-hover-color !important;
+                        color: @accordion-a-hover-color;
+                        filter: none;
+                        &:before {content:@accordion-a-open-icon;}
+            }
+            }
+
+            &:hover {
+                background: @accordion-a-hover-background !important;
+                border-color: @accordion-a-hover-background !important;
+                color: @accordion-a-hover-color;
+                filter: none;
+                &:before {content:@accordion-a-closed-icon;}
+            }
+        }
+    }
+}
+}
+
+/* ======================================
+	Accordion IXP Information
+    REQUIRED CLASSES: .accordion-a
+====================================== */
+
+.accordion-a  {.ixp-accordion("@{accordion-a-name}");}

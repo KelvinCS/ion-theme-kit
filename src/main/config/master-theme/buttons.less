@@ -1,0 +1,584 @@
+/* ======================================
+	Button Element Base
+====================================== */
+
+.button,
+.pf_submit_button,
+.button-container @{form-button},
+.generic-fill, .generic-outline {
+    line-height: 1;
+    border-width: @btn-border-width;
+    border-style: @btn-border-style;
+    .border-radius(@btn-border-radius);
+    cursor: pointer;
+    display: inline-block;
+    margin: @btn-margin;
+    overflow: visible;
+    text-decoration: none;
+    .transition(@btn-transition);
+    -webkit-appearance: none;
+    font-family: @btn-font-family;
+    font-weight: @btn-font-weight;
+    text-transform: @btn-text-transform;
+    
+    &:hover {
+        text-decoration: none !important;
+        border-width: @btn-border-width;
+        }
+    
+    &:after {
+        margin:@icon-btn-margin;
+        .font-icon();
+    }
+}
+
+// Library form button
+.pf_submit_button {
+    .button-a();
+    font-size: @size-b-font-size;
+    padding: @size-b-padding;
+}
+/* ======================================
+	Button - Mixins
+====================================== */
+.button-a() {
+    background:@btn-color-a;
+    color: @btn-text-a !important;
+    border-color: @btn-border-a;
+
+    &:hover {
+        background: @btn-color-a-hover;
+        color: @btn-text-a-hover !important;
+        border-color: @btn-border-a-hover;
+    }
+}
+
+.button-b() {
+    background:@btn-color-b;
+    color: @btn-text-b !important;
+    border-color: @btn-border-b;
+
+    &:hover {
+        background: @btn-color-b-hover;
+        color: @btn-text-b-hover !important;
+        border-color: @btn-border-b-hover;
+    }
+}
+
+.button-c() {
+    background:@btn-color-c;
+    color: @btn-text-c !important;
+    border-color: @btn-border-c;
+
+    &:hover {
+        background: @btn-color-c-hover;
+        color: @btn-text-c-hover !important;
+        border-color: @btn-border-c-hover;
+    }
+}
+
+.button-d() {
+    background:@btn-color-d;
+    color: @btn-text-d !important;
+    border-color: @btn-border-d;
+
+    &:hover {
+        background: @btn-color-d-hover;
+        color: @btn-text-d-hover !important;
+        border-color: @btn-border-d-hover;
+    }
+}
+
+.button-e() {
+    background:@btn-color-e;
+    color: @btn-text-e !important;
+    border-color: @btn-border-e;
+
+    &:hover {
+        background: @btn-color-e-hover;
+        color: @btn-text-e-hover !important;
+        border-color: @btn-border-e-hover;
+    }
+}
+
+.button-f() {
+    background: @btn-color-f;
+    color: @btn-text-f !important;
+    border-color: @btn-border-f;
+
+    &:hover {
+        background: @btn-color-f-hover;
+        color: @btn-text-f-hover !important;
+        border-color: @btn-border-f-hover;
+    }
+}
+
+/* ======================================
+	Button
+
+	REQUIRED CLASS: .button-a
+====================================== */
+
+.button-a,
+.button-container-a @{form-button} {
+    .button-a();
+    
+    &:hover p,
+    &:hover h1,
+    &:hover h2,
+    &:hover h3,
+    &:hover h4,
+    &:hover h5,
+    &:hover h6 {
+        .transition(@btn-transition);
+        color: @btn-text-a-hover !important;
+    }
+}
+.button-a p,
+.button-a h1,
+.button-a h2,
+.button-a h3,
+.button-a h4,
+.button-a h5,
+.button-a h6 {
+    color: @btn-text-a !important;
+}
+
+.button-b,
+.button-container-b @{form-button} {
+    .button-b();
+    
+    &:hover p,
+    &:hover h1,
+    &:hover h2,
+    &:hover h3,
+    &:hover h4,
+    &:hover h5,
+    &:hover h6 {
+        .transition(@btn-transition);
+        color: @btn-text-b-hover !important;
+    }
+}
+.button-b p,
+.button-b h1,
+.button-b h2,
+.button-b h3,
+.button-b h4,
+.button-b h5,
+.button-b h6 {
+    color: @btn-text-b !important;
+}
+
+
+.button-c,
+.button-container-c @{form-button} {
+    .button-c();
+    
+    &:hover p,
+    &:hover h1,
+    &:hover h2,
+    &:hover h3,
+    &:hover h4,
+    &:hover h5,
+    &:hover h6 {
+        .transition(@btn-transition);
+        color: @btn-text-c-hover !important;
+    }
+}
+.button-c p,
+.button-c h1,
+.button-c h2,
+.button-c h3,
+.button-c h4,
+.button-c h5,
+.button-c h6 {
+    color: @btn-text-c !important;
+}
+
+
+.button-d,
+.button-container-d @{form-button} {
+    .button-d();
+    
+    &:hover p,
+    &:hover h1,
+    &:hover h2,
+    &:hover h3,
+    &:hover h4,
+    &:hover h5,
+    &:hover h6 {
+        .transition(@btn-transition);
+        color: @btn-text-d-hover !important;
+    }
+}
+.button-d p,
+.button-d h1,
+.button-d h2,
+.button-d h3,
+.button-d h4,
+.button-d h5,
+.button-d h6 {
+    color: @btn-text-d !important;
+}
+
+.button-e,
+.button-container-e @{form-button} {
+    .button-e();
+    
+    &:hover p,
+    &:hover h1,
+    &:hover h2,
+    &:hover h3,
+    &:hover h4,
+    &:hover h5,
+    &:hover h6 {
+        .transition(@btn-transition);
+        color: @btn-text-e-hover !important;
+    }
+}
+.button-e p,
+.button-e h1,
+.button-e h2,
+.button-e h3,
+.button-e h4,
+.button-e h5,
+.button-e h6 {
+    color: @btn-text-e !important;
+}
+
+
+.button-f,
+.button-container-f @{form-button} {
+    .button-f();
+    
+    &:hover p,
+    &:hover h1,
+    &:hover h2,
+    &:hover h3,
+    &:hover h4,
+    &:hover h5,
+    &:hover h6 {
+        .transition(@btn-transition);
+        color: @btn-text-f-hover !important;
+    }
+}
+.button-f p,
+.button-f h1,
+.button-f h2,
+.button-f h3,
+.button-f h4,
+.button-f h5,
+.button-f h6 {
+    color: @btn-text-f !important;
+}
+
+
+/* ======================================
+	Button Size Settings
+
+	REQUIRED CLASSES:
+	.button-small,
+	.button-medium,
+	.button-large,
+	.button-wide
+====================================== */
+
+.button-small,
+.button-container-small @{form-button} {
+    font-size: @size-a-font-size;
+    padding: @size-a-padding;
+    text-align: center;
+}
+
+.button-medium,
+.button-container-medium @{form-button} {
+    font-size: @size-b-font-size;
+    padding: @size-b-padding;
+    text-align: center;
+}
+
+.button-large,
+.button-container-large @{form-button} {
+    font-size: @size-c-font-size;
+    padding: @size-c-padding;
+    text-align: center;
+}
+
+.button-wide,
+.button-container-wide @{form-button} {
+    display: block;
+    font-size: @size-d-font-size;
+    height: auto;
+    line-height: @size-d-line-height;
+    padding: @size-d-padding;
+    text-align: center;
+}
+
+/* ======================================
+	Button Icon Padding
+====================================== */
+
+.button-small,
+.button-container-small {
+    &.button-@{icon-btn-a}, &.button-@{icon-btn-b}, &.button-@{icon-btn-c}, &.button-@{icon-btn-d} {
+        padding: @size-a-icon-padding;
+    }
+}
+
+.button-medium,
+.button-container-medium {
+    &.button-@{icon-btn-a}, &.button-@{icon-btn-b}, &.button-@{icon-btn-c}, &.button-@{icon-btn-d} {
+        padding: @size-b-icon-padding;
+    }
+}
+
+.button-large,
+.button-container-large {
+    &.button-@{icon-btn-a}, &.button-@{icon-btn-b}, &.button-@{icon-btn-c}, &.button-@{icon-btn-d} {
+        padding: @size-c-icon-padding;
+    }
+}
+
+.button-wide,
+.button-container-wide {
+    &.button-@{icon-btn-a}, &.button-@{icon-btn-b}, &.button-@{icon-btn-c}, &.button-@{icon-btn-d} {
+        padding: @size-d-icon-padding;
+    }
+}
+
+/* ======================================
+	Button Icon Position
+====================================== */
+
+.button-@{icon-btn-a},
+.button-container-@{icon-btn-a} @{form-button}  {
+
+    &:hover {
+    }
+    &:after {
+        content:@icon-btn-a-icon;
+    }
+}
+
+.button-@{icon-btn-b},
+.button-container-@{icon-btn-b} @{form-button}  {
+
+    &:hover {
+    }
+    &:after {
+        content:@icon-btn-b-icon;
+    }
+}
+
+.button-@{icon-btn-c},
+.button-container-@{icon-btn-c} @{form-button}  {
+
+    &:hover {
+    }
+    &:before {
+        margin-right:.85em;
+        .font-icon();
+        content:@icon-btn-c-icon;
+    }
+}
+
+.button-@{icon-btn-d},
+.button-container-@{icon-btn-d} @{form-button}  {
+
+    &:hover {
+    }
+    &:after {
+       content:@icon-btn-d-icon;
+    }
+}
+
+/* ======================================
+	Button IXP Information
+
+	REQUIRED CLASSES:
+	.button.button-a.button-small
+	.button.button-a.button-medium
+	.button.button-a.button-large
+	.button.button-a.button-wide
+====================================== */
+
+// Button A
+.ixp-button('@{button-a-name} (@{size-a})', a, @size-a);
+.ixp-button('@{button-a-name} (@{size-b})', a, @size-b);
+.ixp-button('@{button-a-name} (@{size-c})', a, @size-c);
+.ixp-button('@{button-a-name} (@{size-d})', a, @size-d);
+
+// Button A, Icon A
+.ixp-button-icon('@{button-a-name} @{icon-btn-a} (@{size-a})', a, @size-a, @icon-btn-a);
+.ixp-button-icon('@{button-a-name} @{icon-btn-a} (@{size-b})', a, @size-b, @icon-btn-a);
+.ixp-button-icon('@{button-a-name} @{icon-btn-a} (@{size-c})', a, @size-c, @icon-btn-a);
+.ixp-button-icon('@{button-a-name} @{icon-btn-a} (@{size-d})', a, @size-d, @icon-btn-a);
+
+// Button A, Icon B
+.ixp-button-icon('@{button-a-name} @{icon-btn-b} (@{size-a})', a, @size-a, @icon-btn-b);
+.ixp-button-icon('@{button-a-name} @{icon-btn-b} (@{size-b})', a, @size-b, @icon-btn-b);
+.ixp-button-icon('@{button-a-name} @{icon-btn-b} (@{size-c})', a, @size-c, @icon-btn-b);
+.ixp-button-icon('@{button-a-name} @{icon-btn-b} (@{size-d})', a, @size-d, @icon-btn-b);
+
+// Button A, Icon C
+.ixp-button-icon('@{button-a-name} @{icon-btn-c} (@{size-a})', a, @size-a, @icon-btn-c);
+.ixp-button-icon('@{button-a-name} @{icon-btn-c} (@{size-b})', a, @size-b, @icon-btn-c);
+.ixp-button-icon('@{button-a-name} @{icon-btn-c} (@{size-c})', a, @size-c, @icon-btn-c);
+.ixp-button-icon('@{button-a-name} @{icon-btn-c} (@{size-d})', a, @size-d, @icon-btn-c);
+
+// Button A, Icon D
+.ixp-button-icon('@{button-a-name} @{icon-btn-d} (@{size-a})', a, @size-a, @icon-btn-d);
+.ixp-button-icon('@{button-a-name} @{icon-btn-d} (@{size-b})', a, @size-b, @icon-btn-d);
+.ixp-button-icon('@{button-a-name} @{icon-btn-d} (@{size-c})', a, @size-c, @icon-btn-d);
+.ixp-button-icon('@{button-a-name} @{icon-btn-d} (@{size-d})', a, @size-d, @icon-btn-d);
+
+// Button B
+.ixp-button('@{button-b-name} (@{size-a})', b, @size-a);
+.ixp-button('@{button-b-name} (@{size-b})', b, @size-b);
+.ixp-button('@{button-b-name} (@{size-c})', b, @size-c);
+.ixp-button('@{button-b-name} (@{size-d})', b, @size-d);
+
+// Button B, Icon A
+.ixp-button-icon('@{button-b-name} @{icon-btn-a} (@{size-a})', b, @size-a, @icon-btn-a);
+.ixp-button-icon('@{button-b-name} @{icon-btn-a} (@{size-b})', b, @size-b, @icon-btn-a);
+.ixp-button-icon('@{button-b-name} @{icon-btn-a} (@{size-c})', b, @size-c, @icon-btn-a);
+.ixp-button-icon('@{button-b-name} @{icon-btn-a} (@{size-d})', b, @size-d, @icon-btn-a);
+
+// Button B, Icon B
+.ixp-button-icon('@{button-b-name} @{icon-btn-b} (@{size-a})', b, @size-a, @icon-btn-b);
+.ixp-button-icon('@{button-b-name} @{icon-btn-b} (@{size-b})', b, @size-b, @icon-btn-b);
+.ixp-button-icon('@{button-b-name} @{icon-btn-b} (@{size-c})', b, @size-c, @icon-btn-b);
+.ixp-button-icon('@{button-b-name} @{icon-btn-b} (@{size-d})', b, @size-d, @icon-btn-b);
+
+// Button B, Icon C
+.ixp-button-icon('@{button-b-name} @{icon-btn-c} (@{size-a})', b, @size-a, @icon-btn-c);
+.ixp-button-icon('@{button-b-name} @{icon-btn-c} (@{size-b})', b, @size-b, @icon-btn-c);
+.ixp-button-icon('@{button-b-name} @{icon-btn-c} (@{size-c})', b, @size-c, @icon-btn-c);
+.ixp-button-icon('@{button-b-name} @{icon-btn-c} (@{size-d})', b, @size-d, @icon-btn-c);
+
+// Button B, Icon D
+.ixp-button-icon('@{button-b-name} @{icon-btn-d} (@{size-a})', b, @size-a, @icon-btn-d);
+.ixp-button-icon('@{button-b-name} @{icon-btn-d} (@{size-b})', b, @size-b, @icon-btn-d);
+.ixp-button-icon('@{button-b-name} @{icon-btn-d} (@{size-c})', b, @size-c, @icon-btn-d);
+.ixp-button-icon('@{button-b-name} @{icon-btn-d} (@{size-d})', b, @size-d, @icon-btn-d);
+
+// Button C
+.ixp-button('@{button-c-name} (@{size-a})', c, @size-a);
+.ixp-button('@{button-c-name} (@{size-b})', c, @size-b);
+.ixp-button('@{button-c-name} (@{size-c})', c, @size-c);
+.ixp-button('@{button-c-name} (@{size-d})', c, @size-d);
+
+// Button C, Icon A
+.ixp-button-icon('@{button-c-name} @{icon-btn-a} (@{size-a})', c, @size-a, @icon-btn-a);
+.ixp-button-icon('@{button-c-name} @{icon-btn-a} (@{size-b})', c, @size-b, @icon-btn-a);
+.ixp-button-icon('@{button-c-name} @{icon-btn-a} (@{size-c})', c, @size-c, @icon-btn-a);
+.ixp-button-icon('@{button-c-name} @{icon-btn-a} (@{size-d})', c, @size-d, @icon-btn-a);
+
+// Button C, Icon B
+.ixp-button-icon('@{button-c-name} @{icon-btn-b} (@{size-a})', c, @size-a, @icon-btn-b);
+.ixp-button-icon('@{button-c-name} @{icon-btn-b} (@{size-b})', c, @size-b, @icon-btn-b);
+.ixp-button-icon('@{button-c-name} @{icon-btn-b} (@{size-c})', c, @size-c, @icon-btn-b);
+.ixp-button-icon('@{button-c-name} @{icon-btn-b} (@{size-d})', c, @size-d, @icon-btn-b);
+
+// Button C, Icon C
+.ixp-button-icon('@{button-c-name} @{icon-btn-c} (@{size-a})', c, @size-a, @icon-btn-c);
+.ixp-button-icon('@{button-c-name} @{icon-btn-c} (@{size-b})', c, @size-b, @icon-btn-c);
+.ixp-button-icon('@{button-c-name} @{icon-btn-c} (@{size-c})', c, @size-c, @icon-btn-c);
+.ixp-button-icon('@{button-c-name} @{icon-btn-c} (@{size-d})', c, @size-d, @icon-btn-c);
+
+// Button C, Icon D
+.ixp-button-icon('@{button-c-name} @{icon-btn-d} (@{size-a})', c, @size-a, @icon-btn-d);
+.ixp-button-icon('@{button-c-name} @{icon-btn-d} (@{size-b})', c, @size-b, @icon-btn-d);
+.ixp-button-icon('@{button-c-name} @{icon-btn-d} (@{size-c})', c, @size-c, @icon-btn-d);
+.ixp-button-icon('@{button-c-name} @{icon-btn-d} (@{size-d})', c, @size-d, @icon-btn-d);
+
+// Button D
+.ixp-button('@{button-d-name} (@{size-a})', d, @size-a);
+.ixp-button('@{button-d-name} (@{size-b})', d, @size-b);
+.ixp-button('@{button-d-name} (@{size-c})', d, @size-c);
+.ixp-button('@{button-d-name} (@{size-d})', d, @size-d);
+
+// Button D, Icon A
+.ixp-button-icon('@{button-d-name} @{icon-btn-a} (@{size-a})', d, @size-a, @icon-btn-a);
+.ixp-button-icon('@{button-d-name} @{icon-btn-a} (@{size-b})', d, @size-b, @icon-btn-a);
+.ixp-button-icon('@{button-d-name} @{icon-btn-a} (@{size-c})', d, @size-c, @icon-btn-a);
+.ixp-button-icon('@{button-d-name} @{icon-btn-a} (@{size-d})', d, @size-d, @icon-btn-a);
+
+// Button D, Icon B
+.ixp-button-icon('@{button-d-name} @{icon-btn-b} (@{size-a})', d, @size-a, @icon-btn-b);
+.ixp-button-icon('@{button-d-name} @{icon-btn-b} (@{size-b})', d, @size-b, @icon-btn-b);
+.ixp-button-icon('@{button-d-name} @{icon-btn-b} (@{size-c})', d, @size-c, @icon-btn-b);
+.ixp-button-icon('@{button-d-name} @{icon-btn-b} (@{size-d})', d, @size-d, @icon-btn-b);
+
+// Button D, Icon C
+.ixp-button-icon('@{button-d-name} @{icon-btn-c} (@{size-a})', d, @size-a, @icon-btn-c);
+.ixp-button-icon('@{button-d-name} @{icon-btn-c} (@{size-b})', d, @size-b, @icon-btn-c);
+.ixp-button-icon('@{button-d-name} @{icon-btn-c} (@{size-c})', d, @size-c, @icon-btn-c);
+.ixp-button-icon('@{button-d-name} @{icon-btn-c} (@{size-d})', d, @size-d, @icon-btn-c);
+
+// Button D, Icon D
+.ixp-button-icon('@{button-d-name} @{icon-btn-d} (@{size-a})', d, @size-a, @icon-btn-d);
+.ixp-button-icon('@{button-d-name} @{icon-btn-d} (@{size-b})', d, @size-b, @icon-btn-d);
+.ixp-button-icon('@{button-d-name} @{icon-btn-d} (@{size-c})', d, @size-c, @icon-btn-d);
+.ixp-button-icon('@{button-d-name} @{icon-btn-d} (@{size-d})', d, @size-d, @icon-btn-d);
+
+// Button E
+.ixp-button('@{button-e-name} (@{size-a})', e, @size-a);
+.ixp-button('@{button-e-name} (@{size-b})', e, @size-b);
+.ixp-button('@{button-e-name} (@{size-c})', e, @size-c);
+.ixp-button('@{button-e-name} (@{size-d})', e, @size-d);
+
+// Button E, Icon A
+.ixp-button-icon('@{button-e-name} @{icon-btn-a} (@{size-a})', e, @size-a, @icon-btn-a);
+.ixp-button-icon('@{button-e-name} @{icon-btn-a} (@{size-b})', e, @size-b, @icon-btn-a);
+.ixp-button-icon('@{button-e-name} @{icon-btn-a} (@{size-c})', e, @size-c, @icon-btn-a);
+.ixp-button-icon('@{button-e-name} @{icon-btn-a} (@{size-d})', e, @size-d, @icon-btn-a);
+
+// Button E, Icon B
+.ixp-button-icon('@{button-e-name} @{icon-btn-b} (@{size-a})', e, @size-a, @icon-btn-b);
+.ixp-button-icon('@{button-e-name} @{icon-btn-b} (@{size-b})', e, @size-b, @icon-btn-b);
+.ixp-button-icon('@{button-e-name} @{icon-btn-b} (@{size-c})', e, @size-c, @icon-btn-b);
+.ixp-button-icon('@{button-e-name} @{icon-btn-b} (@{size-d})', e, @size-d, @icon-btn-b);
+
+// Button E, Icon C
+.ixp-button-icon('@{button-e-name} @{icon-btn-c} (@{size-a})', e, @size-a, @icon-btn-c);
+.ixp-button-icon('@{button-e-name} @{icon-btn-c} (@{size-b})', e, @size-b, @icon-btn-c);
+.ixp-button-icon('@{button-e-name} @{icon-btn-c} (@{size-c})', e, @size-c, @icon-btn-c);
+.ixp-button-icon('@{button-e-name} @{icon-btn-c} (@{size-d})', e, @size-d, @icon-btn-c);
+
+// Button E, Icon D
+.ixp-button-icon('@{button-e-name} @{icon-btn-d} (@{size-a})', e, @size-a, @icon-btn-d);
+.ixp-button-icon('@{button-e-name} @{icon-btn-d} (@{size-b})', e, @size-b, @icon-btn-d);
+.ixp-button-icon('@{button-e-name} @{icon-btn-d} (@{size-c})', e, @size-c, @icon-btn-d);
+.ixp-button-icon('@{button-e-name} @{icon-btn-d} (@{size-d})', e, @size-d, @icon-btn-d);
+
+// Button F
+.ixp-button('@{button-f-name} (@{size-a})', f, @size-a);
+.ixp-button('@{button-f-name} (@{size-b})', f, @size-b);
+.ixp-button('@{button-f-name} (@{size-c})', f, @size-c);
+.ixp-button('@{button-f-name} (@{size-d})', f, @size-d);
+
+// Button F, Icon A
+.ixp-button-icon('@{button-f-name} @{icon-btn-a} (@{size-a})', f, @size-a, @icon-btn-a);
+.ixp-button-icon('@{button-f-name} @{icon-btn-a} (@{size-b})', f, @size-b, @icon-btn-a);
+.ixp-button-icon('@{button-f-name} @{icon-btn-a} (@{size-c})', f, @size-c, @icon-btn-a);
+.ixp-button-icon('@{button-f-name} @{icon-btn-a} (@{size-d})', f, @size-d, @icon-btn-a);
+
+// Button F, Icon B
+.ixp-button-icon('@{button-f-name} @{icon-btn-b} (@{size-a})', f, @size-a, @icon-btn-b);
+.ixp-button-icon('@{button-f-name} @{icon-btn-b} (@{size-b})', f, @size-b, @icon-btn-b);
+.ixp-button-icon('@{button-f-name} @{icon-btn-b} (@{size-c})', f, @size-c, @icon-btn-b);
+.ixp-button-icon('@{button-f-name} @{icon-btn-b} (@{size-d})', f, @size-d, @icon-btn-b);
+
+// Button F, Icon C
+.ixp-button-icon('@{button-f-name} @{icon-btn-c} (@{size-a})', f, @size-a, @icon-btn-c);
+.ixp-button-icon('@{button-f-name} @{icon-btn-c} (@{size-b})', f, @size-b, @icon-btn-c);
+.ixp-button-icon('@{button-f-name} @{icon-btn-c} (@{size-c})', f, @size-c, @icon-btn-c);
+.ixp-button-icon('@{button-f-name} @{icon-btn-c} (@{size-d})', f, @size-d, @icon-btn-c);
+
+// Button F, Icon D
+.ixp-button-icon('@{button-f-name} @{icon-btn-d} (@{size-a})', f, @size-a, @icon-btn-d);
+.ixp-button-icon('@{button-f-name} @{icon-btn-d} (@{size-b})', f, @size-b, @icon-btn-d);
+.ixp-button-icon('@{button-f-name} @{icon-btn-d} (@{size-c})', f, @size-c, @icon-btn-d);
+.ixp-button-icon('@{button-f-name} @{icon-btn-d} (@{size-d})', f, @size-d, @icon-btn-d);
+

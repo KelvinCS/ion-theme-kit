@@ -1,0 +1,986 @@
+/* ======================================
+	ThemeName FormBrand.css
+
+    Last Updated : Author 04/02/2020
+    Created : Author 04/02/2020
+====================================== */
+.ixp-component-form-style-brand-brand.ixp-required-bold .ixp-component-form-field-label-container {
+  font-weight: 400;
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-label-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-component-form-field-validated.ixp-input-validation-invalid .ixp-component-form-field-label-container .ixp-text,
+.ixp-component-form-style-brand-brand.ixp-component-form-label-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-component-form-field-validated.ixp-input-validation-invalid .ixp-component-form-field-label-container .ixp-text,
+.ixp-component-form-style-brand-brand.ixp-component-form-label-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-component-form-field-validated.ixp-input-validation-incomplete .ixp-component-form-field-label-container .ixp-text,
+.ixp-component-form-style-brand-brand.ixp-component-form-label-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-component-form-field-validated.ixp-input-validation-incomplete .ixp-component-form-field-label-container .ixp-text,
+.ixp-component-form-style-brand-brand.ixp-component-form-label-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-component-form-field-validated.ixp-input-validation-invalid .ixp-component-form-field-label-container .ixp-text span[style],
+.ixp-component-form-style-brand-brand.ixp-component-form-label-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-component-form-field-validated.ixp-input-validation-invalid .ixp-component-form-field-label-container .ixp-text span[style],
+.ixp-component-form-style-brand-brand.ixp-component-form-label-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-component-form-field-validated.ixp-input-validation-incomplete .ixp-component-form-field-label-container .ixp-text span[style],
+.ixp-component-form-style-brand-brand.ixp-component-form-label-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-component-form-field-validated.ixp-input-validation-incomplete .ixp-component-form-field-label-container .ixp-text span[style] {
+  color: #B32F3D !important;
+}
+.ixp-component-form-style-brand-brand .ixp-component-form-field .ixp-input {
+  margin-top: 10px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-form-field .ixp-input:first-child {
+  margin-top: 0;
+}
+.ixp-component-form-style-brand-brand .ixp-component-form-field .ixp-component-choice-group + .ixp-component-choice-group {
+  margin-top: 0;
+}
+.ixp-component-form-style-brand-brand .ixp-component-form-field .ixp-component-slider {
+  margin-top: 20px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-textbox-inherit {
+  position: relative;
+}
+.ixp-component-form-style-brand-brand .ixp-component-textbox-inherit .ixp-component-textbox-input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #FFF;
+  border: solid 1px #8a9a9a;
+  padding: 10px;
+  font-size: 1em;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  font-weight: 400;
+}
+.ixp-component-form-style-brand-brand .ixp-component-textbox-inherit .ixp-component-textbox-input:-moz-placeholder {
+  color: #8a9a9a;
+}
+.ixp-component-form-style-brand-brand .ixp-component-textbox-inherit .ixp-component-textbox-input::-moz-placeholder {
+  color: #8a9a9a;
+}
+.ixp-component-form-style-brand-brand .ixp-component-textbox-inherit .ixp-component-textbox-input::-webkit-input-placeholder {
+  color: #8a9a9a;
+}
+.ixp-component-form-style-brand-brand .ixp-component-textbox-inherit .ixp-component-textbox-input:-ms-input-placeholder {
+  color: #8a9a9a;
+}
+.ixp-component-form-style-brand-brand .ixp-component-textbox-inherit .ixp-component-textbox-input::input-placeholder {
+  color: #8a9a9a;
+}
+.ixp-component-form-style-brand-brand .ixp-component-textbox-inherit .ixp-component-textbox-input:focus {
+  border-color: #59c9d5;
+  background: #FFF !important;
+}
+.ixp-component-form-style-brand-brand.ixp-required-input-asterisk .ixp-component-form-field-input-container .ixp-component-textbox-inherit.ixp-input-required .ixp-component-textbox-input-wrap {
+  position: relative;
+  padding-right: 28px;
+}
+.ixp-component-form-style-brand-brand.ixp-required-input-asterisk .ixp-component-form-field-input-container .ixp-component-textbox-inherit.ixp-input-required .ixp-component-textbox-input-wrap:before {
+  content: "*";
+  display: block;
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  font-family: Arial, Helvetica, sans-serif;
+  right: 5px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  z-index: 1;
+  line-height: normal;
+  font-size: 1em;
+  padding-top: 8px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-textbox-inherit .ixp-component-textbox-input,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-textbox-inherit .ixp-component-textbox-input,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-textbox-inherit .ixp-component-textbox-input,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-textbox-inherit .ixp-component-textbox-input,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-textbox-inherit .ixp-component-textbox-input:focus,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-textbox-inherit .ixp-component-textbox-input:focus,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-textbox-inherit .ixp-component-textbox-input:focus,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-textbox-inherit .ixp-component-textbox-input:focus {
+  border-color: #B32F3D;
+  background: #FFF;
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-textbox-inherit .ixp-component-textbox-input,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-textbox-inherit .ixp-component-textbox-input,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-textbox-inherit .ixp-component-textbox-input,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-textbox-inherit .ixp-component-textbox-input {
+  background-color: rgba(179, 47, 61, 0.95);
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-textbox-inherit .ixp-component-textbox-input,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-textbox-inherit .ixp-component-textbox-input,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-textbox-inherit .ixp-component-textbox-input,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-textbox-inherit .ixp-component-textbox-input,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-textbox-inherit .ixp-component-textbox-input:focus,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-textbox-inherit .ixp-component-textbox-input:focus,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-textbox-inherit .ixp-component-textbox-input:focus,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-textbox-inherit .ixp-component-textbox-input:focus {
+  border-color: #621a21;
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-textbox-inherit .ixp-component-textbox-input-wrap,
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-textbox-inherit .ixp-component-textbox-input-wrap,
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-textbox-inherit .ixp-component-textbox-input-wrap,
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-textbox-inherit .ixp-component-textbox-input-wrap {
+  padding-right: 28px;
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-textbox-inherit .ixp-component-textbox-input-wrap:before,
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-textbox-inherit .ixp-component-textbox-input-wrap:before,
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-textbox-inherit .ixp-component-textbox-input-wrap:before,
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-textbox-inherit .ixp-component-textbox-input-wrap:before {
+  content: "";
+  display: block;
+  position: absolute;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  right: -6px;
+  top: 1px;
+  width: 26px;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+  background: #B32F3D url(invalid.png) 5px 4px no-repeat;
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-textbox-inherit .ixp-component-textbox-input-wrap:after,
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-textbox-inherit .ixp-component-textbox-input-wrap:after,
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-textbox-inherit .ixp-component-textbox-input-wrap:after,
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-textbox-inherit .ixp-component-textbox-input-wrap:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 20px;
+  top: 10px;
+  border-left: 4px solid transparent;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-right: 4px solid #B32F3D;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit .ixp-component-slider-uislider-wrap {
+  position: relative;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit .ui-slider {
+  position: relative;
+  background: #8a9a9a;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit .ui-slider-horizontal {
+  height: 6px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit .ui-slider-vertical {
+  height: 100px;
+  width: 6px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit .ui-slider-handle {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #8a9a9a;
+  background: #FFF;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit .ui-slider-handle:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -5px;
+  margin-left: -5px;
+  width: 10px;
+  height: 10px;
+  background: #FFF;
+  border-radius: 50%;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit .ui-slider-handle.ui-state-hover:before,
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit .ui-slider-handle.ui-state-active:before,
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit .ui-slider-handle.ui-state-focus:before {
+  background: #59c9d5;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit .ui-slider-handle.ui-state-active,
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit .ui-slider-handle.ui-state-focus {
+  border-color: #59c9d5;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit.ixp-component-slider-value-horizontal .ui-slider-handle {
+  top: -11px;
+  margin-left: -14px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit.ixp-component-slider-value-vertical .ui-slider-handle {
+  left: -11px;
+  margin-bottom: -14px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit.ixp-component-slider-value-none .ixp-component-slider-value {
+  display: none;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit .ixp-component-slider-value {
+  font-size: 14px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit.ixp-component-slider-value-handle .ixp-component-slider-value {
+  display: inline-block;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #FFF;
+  border: 1px solid #8a9a9a;
+  padding: 2px 4px;
+  text-align: center;
+  color: #000;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit.ixp-component-slider-value-handle .ixp-component-slider-value:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit.ixp-component-slider-value-horizontal.ixp-component-slider-value-handle .ixp-component-slider-value {
+  top: 18px !important;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit.ixp-component-slider-value-horizontal.ixp-component-slider-value-handle .ixp-component-slider-value:before {
+  left: 50%;
+  border-style: solid;
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #8a9a9a transparent;
+  top: -6px;
+  margin-left: -6px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit.ixp-component-slider-value-vertical.ixp-component-slider-value-handle .ixp-component-slider-value {
+  left: 24px !important;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit.ixp-component-slider-value-vertical.ixp-component-slider-value-handle .ixp-component-slider-value:before {
+  top: 50%;
+  border-style: solid;
+  border-width: 6px 6px 6px 0;
+  border-color: transparent #8a9a9a transparent transparent;
+  left: -6px;
+  margin-top: -6px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit.ixp-component-slider-value-horizontal .ixp-component-slider-uislider-wrap {
+  padding: 10px 0;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit.ixp-component-slider-value-horizontal.ixp-component-slider-value-min .ixp-component-slider-uislider-wrap {
+  margin-left: 50px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit.ixp-component-slider-value-horizontal.ixp-component-slider-value-min .ixp-component-slider-value {
+  position: absolute;
+  right: 100%;
+  top: 2px;
+  padding-right: 16px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit.ixp-component-slider-value-vertical.ixp-component-slider-value-min .ixp-component-slider-value {
+  padding-top: 12px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit.ixp-component-slider-value-horizontal.ixp-component-slider-value-max .ixp-component-slider-uislider-wrap {
+  margin-right: 50px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit.ixp-component-slider-value-horizontal.ixp-component-slider-value-max .ixp-component-slider-value {
+  position: absolute;
+  left: 100%;
+  top: 2px;
+  padding-left: 16px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit.ixp-component-slider-value-vertical.ixp-component-slider-value-max .ixp-component-slider-uislider-wrap {
+  padding-top: 32px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-slider-inherit.ixp-component-slider-value-vertical.ixp-component-slider-value-max .ixp-component-slider-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group .ixp-component-choice.ixp-component-choice-no-override {
+  position: relative;
+  cursor: pointer;
+  min-height: 26px;
+  line-height: 26px;
+  padding: 0 10px 0 36px;
+  margin-bottom: 10px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group .ixp-component-choice.ixp-component-choice-no-override:before,
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group .ixp-component-choice.ixp-component-choice-no-override:after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group .ixp-component-choice.ixp-component-choice-no-override:before {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  background: #FFF;
+  border: 1px solid #8a9a9a;
+  outline: none;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group .ixp-component-choice.ixp-component-choice-no-override:after {
+  bottom: 0;
+  right: 0;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group .ixp-component-choice.ixp-component-choice-no-override:focus:before .ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group .ixp-component-choice.ixp-component-choice-no-override.ui-state-focus:before {
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+  background: #FFF !important;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-single .ixp-component-choice.ixp-component-choice-no-override:before,
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-single .ixp-component-choice.ixp-component-choice-no-override:after {
+  border-radius: 100%;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-single .ixp-component-choice.ixp-component-choice-no-override:after {
+  top: 0;
+  left: 8px;
+  width: 12px;
+  height: 12px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-single .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off:hover:after {
+  background-color: #8a9a9a;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-single .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-on:after,
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-single .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-on:hover:after {
+  background-color: #59c9d5;
+}
+html.ixp-lt-ie9 .ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-single .ixp-component-choice.ixp-component-choice-no-override:after {
+  display: none;
+}
+html.ixp-lt-ie9 .ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-single .ixp-component-choice.ixp-component-choice-no-override:before {
+  border: none;
+  width: 28px;
+  height: 28px;
+  background: transparent url('brand_sprite-choice.png') no-repeat;
+}
+html.ixp-lt-ie9 .ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-single .ixp-component-choice.ixp-component-choice-no-override:focus:before,
+html.ixp-lt-ie9 .ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-single .ixp-component-choice.ixp-component-choice-no-override.ui-state-focus:before {
+  outline-color: #eaeaea;
+  background: #ffffff !important;
+}
+html.ixp-lt-ie9 .ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-single .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off:before {
+  content: " ";
+  background-position: 0 top;
+}
+html.ixp-lt-ie9 .ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-single .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off:hover:before {
+  content: "  ";
+  background-position: -28px top;
+}
+html.ixp-lt-ie9 .ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-single .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-on:before,
+html.ixp-lt-ie9 .ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-single .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-on:hover:before {
+  content: "   ";
+  background-position: -56px top;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-multi .ixp-component-choice.ixp-component-choice-no-override:before {
+  border-radius: 0;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-multi .ixp-component-choice.ixp-component-choice-no-override:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -4px;
+  left: 10px;
+  width: 5px;
+  height: 9px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-multi .ixp-component-choice.ixp-component-choice-no-override:hover:after {
+  border-style: solid;
+  border-width: 0 3px 3px 0;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-multi .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off:hover:after {
+  border-color: #8a9a9a;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-multi .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-on:after {
+  border-style: solid;
+  border-width: 0 3px 3px 0;
+  border-color: #59c9d5;
+  -webkit-box-shadow: 1px 1px 0 0 rgba(140, 198, 63, 0.5);
+  -moz-box-shadow: 1px 1px 0 0 rgba(140, 198, 63, 0.5);
+  box-shadow: 1px 1px 0 0 rgba(140, 198, 63, 0.5);
+}
+html.ixp-lt-ie9 .ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-multi .ixp-component-choice.ixp-component-choice-no-override:after {
+  display: none;
+}
+html.ixp-lt-ie9 .ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-multi .ixp-component-choice.ixp-component-choice-no-override:before {
+  border: none;
+  width: 28px;
+  height: 28px;
+  background: transparent url('brand_sprite-choice.png') no-repeat;
+}
+html.ixp-lt-ie9 .ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-multi .ixp-component-choice.ixp-component-choice-no-override:focus:before,
+html.ixp-lt-ie9 .ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-multi .ixp-component-choice.ixp-component-choice-no-override.ui-state-focus:before {
+  outline-color: 1px solid rgba(0, 0, 0, 0.5);
+  background: #ffffff !important;
+}
+html.ixp-lt-ie9 .ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-multi .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off:before {
+  content: " ";
+  background-position: 0 bottom;
+}
+html.ixp-lt-ie9 .ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-multi .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off:hover:before {
+  content: "  ";
+  background-position: -28px bottom;
+}
+html.ixp-lt-ie9 .ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-multi .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-on:before,
+html.ixp-lt-ie9 .ixp-component-form-style-brand-brand .ixp-component-choice-group-inherit.ixp-component-choice-group.ixp-component-choice-group-select-mode-multi .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-on:hover:before {
+  content: "   ";
+  background-position: -56px bottom;
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-choice-group-inherit .ixp-component-choice.ixp-component-choice-no-override:before,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-choice-group-inherit .ixp-component-choice.ixp-component-choice-no-override:before,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-choice-group-inherit .ixp-component-choice.ixp-component-choice-no-override:before,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-choice-group-inherit .ixp-component-choice.ixp-component-choice-no-override:before {
+  border: 1px solid #B32F3D;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  background: #ffffff ;
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-choice-group-inherit .ixp-component-choice.ixp-component-choice-no-override:before,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-choice-group-inherit .ixp-component-choice.ixp-component-choice-no-override:before,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-choice-group-inherit .ixp-component-choice.ixp-component-choice-no-override:before,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-choice-group-inherit .ixp-component-choice.ixp-component-choice-no-override:before {
+  background-color: rgba(179, 47, 61, 0.95) !important;
+  border-color: #621a21;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override {
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+  padding: 0.5em;
+  margin-bottom: 10px;
+  background: transparent;
+  border: solid 2px #8a9a9a;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override:hover {
+  background: transparent !important;
+  outline: none;
+  border: solid 2px #59c9d5;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override div {
+  -webkit-backface-visibility: hidden;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override:focus,
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override.ui-state-focus {
+  background: transparent !important;
+  outline: none;
+  border: solid 2px #59c9d5;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-on {
+  background: transparent !important;
+  outline: none;
+  border: solid 2px #59c9d5;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off {
+  border: solid 2px #8a9a9a;
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override:focus,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override:focus,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override:focus,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override:focus {
+  border: 2px solid #B32F3D !important;
+  color: #B32F3D;
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override {
+  background-color: rgba(179, 47, 61, 0.95);
+  color: #B32F3D;
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override:focus,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override:focus,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override:focus,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-choice-group-border .ixp-component-choice.ixp-component-choice-no-override:focus {
+  border-color: #621a21;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-toggle-switch-inherit .ixp-component-choice.ixp-component-choice-no-override {
+  position: relative;
+  box-sizing: border-box;
+  min-width: 80px;
+  line-height: 40px;
+  margin: 0 20px 10px 0;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-toggle-switch-inherit .ixp-component-choice.ixp-component-choice-no-override:before,
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-toggle-switch-inherit .ixp-component-choice.ixp-component-choice-no-override:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  height: 40px;
+  line-height: 40px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-toggle-switch-inherit .ixp-component-choice.ixp-component-choice-no-override:before {
+  z-index: 1;
+  width: 70px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #eee;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-toggle-switch-inherit .ixp-component-choice.ixp-component-choice-no-override:focus:before,
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-toggle-switch-inherit .ixp-component-choice.ixp-component-choice-no-override.ui-state-focus:before {
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+  background: #ffffff !important;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-toggle-switch-inherit .ixp-component-choice.ixp-component-choice-no-override:after {
+  z-index: 2;
+  border-radius: 100%;
+  background: #000;
+  width: 40px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-toggle-switch-inherit .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-on:before {
+  background: #59c9d5;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-toggle-switch-inherit .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-on:after {
+  left: 32px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group.ixp-component-choice-group-toggle-switch-inherit.ixp-component-choice-group-select-mode-single .ixp-component-choice .ixp-component-choice-off:hover:hover:after,
+.ixp-component-form-style-brand-brand .ixp-component-choice-group.ixp-component-choice-group-toggle-switch-inherit.ixp-component-choice-group-select-mode-single .ixp-component-choice.ixp-component-choice-on:hover:after,
+.ixp-component-form-style-brand-brand .ixp-component-choice-group.ixp-component-choice-group-toggle-switch-inherit.ixp-component-choice-group-select-mode-single .ixp-component-choice .ixp-component-choice-off:hover:after,
+.ixp-component-form-style-brand-brand .ixp-component-choice-group.ixp-component-choice-group-toggle-switch-inherit.ixp-component-choice-group-select-mode-single .ixp-component-choice.ixp-component-choice-on:after {
+  background-color: #000;
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-choice-group-toggle-switch-inherit .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off:before,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-choice-group-toggle-switch-inherit .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off:before,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-choice-group-toggle-switch-inherit .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off:before,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-choice-group-toggle-switch-inherit .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off:before {
+  border: 1px solid #B32F3D;
+  background: #ffffff ;
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-choice-group-toggle-switch-inherit .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off:before,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-choice-group-toggle-switch-inherit .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off:before,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-choice-group-toggle-switch-inherit .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off:before,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-choice-group-toggle-switch-inherit .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off:before {
+  background: #B32F3D;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-sticker-inherit .ixp-component-choice.ixp-component-choice-no-override {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin: 0 20px 10px 0;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-sticker-inherit .ixp-component-choice.ixp-component-choice-no-override:before,
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-sticker-inherit .ixp-component-choice.ixp-component-choice-no-override:after {
+  top: -15px;
+  right: -15px;
+  width: 40px;
+  height: 40px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-sticker-inherit .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-on:before,
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-sticker-inherit .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-on:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-sticker-inherit .ixp-component-choice.ixp-component-choice-no-override:before {
+  z-index: 2;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background: #59c9d5;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-sticker-inherit .ixp-component-choice.ixp-component-choice-no-override:after {
+  z-index: 3;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  background: url('brand_sprite-sticker.png') 0 -40px no-repeat;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-sticker-inherit .ixp-component-choice.ixp-component-choice-no-override:focus .ixp-component-choice-simple-container,
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-sticker-inherit .ixp-component-choice.ixp-component-choice-no-override.ui-state-focus .ixp-component-choice-simple-container {
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+  background: #ffffff !important;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-sticker-inherit.ixp-input-validated.ixp-input-validation-incomplete .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off:before,
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-sticker-inherit.ixp-input-validated.ixp-input-validation-incomplete .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-sticker-inherit.ixp-input-validated.ixp-input-validation-incomplete .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off:before {
+  background: #B32F3D;
+}
+.ixp-component-form-style-brand-brand .ixp-component-choice-group-sticker-inherit.ixp-input-validated.ixp-input-validation-incomplete .ixp-component-choice.ixp-component-choice-no-override.ixp-component-choice-off:after {
+  background: url('brand_sprite-sticker.png') no-repeat;
+}
+.ixp-component-form-style-brand-brand .ixp-component-dropdown-inherit .select2-container {
+  position: relative;
+  min-width: 88px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-dropdown-inherit .select2-choice {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  text-decoration: none;
+  background-clip: padding-box;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  background: #FFF;
+  line-height: normal;
+  border: solid 1px #8a9a9a;
+  padding: 10px 7px;
+  font-size: 1em;
+  color: #000;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  font-weight: 400;
+  text-align: left;
+}
+.ixp-component-form-style-brand-brand .ixp-component-dropdown-inherit .select2-choice.select2-default .select2-search-choice-close {
+  display: none;
+}
+.ixp-component-form-style-brand-brand .ixp-component-dropdown-inherit .select2-container-active .select2-choice {
+  border: solid 1px #8a9a9a;
+  background: #FFF !important;
+}
+.ixp-component-form-style-brand-brand .ixp-component-dropdown-inherit .select2-default .select2-chosen {
+  color: #8a9a9a !important;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 400 !important;
+}
+.ixp-component-form-style-brand-brand .ixp-component-dropdown-inherit .select2-allowclear .select2-chosen {
+  padding-left: 18px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-dropdown-inherit .select2-allowclear .select2-search-choice-close {
+  content: "";
+  display: block;
+  position: absolute;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  width: 12px;
+  height: 12px;
+  background-image: url('brand_sprite-dropdown.png');
+  background-position: -12px -12px;
+  top: 28%;
+  left: 5px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-dropdown-inherit .select2-arrow {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 22px;
+  right: 0;
+  top: 0;
+}
+.ixp-component-form-style-brand-brand .ixp-component-dropdown-inherit .select2-arrow b:before,
+.ixp-component-form-style-brand-brand .ixp-component-dropdown-inherit .select2-arrow b:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  left: 50%;
+  margin-left: -16px;
+}
+.ixp-component-form-style-brand-brand .ixp-component-dropdown-inherit .select2-arrow b:before {
+  margin-bottom: 1px;
+  bottom: 50%;
+  display: none !important;
+}
+.ixp-component-form-style-brand-brand .ixp-component-dropdown-inherit .select2-arrow b:after {
+  margin-top: 1px;
+  border: none;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  display: inline-block;
+  width: 22px;
+  content: '\f107';
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+.ixp-component-form-style-brand-brand .ixp-component-dropdown-inherit .select2-choice:hover .select2-arrow b:before {
+  border-color: transparent transparent #8a9a9a transparent;
+}
+.ixp-component-form-style-brand-brand .ixp-component-dropdown-inherit .select2-choice:hover .select2-arrow b:after {
+  border-color: #8a9a9a transparent transparent transparent;
+}
+.ixp-component-form-style-brand-brand.ixp-required-input-asterisk .ixp-component-form-field-input-container .ixp-component-dropdown-inherit.ixp-input-required .ixp-component-dropdown-input-wrap {
+  position: relative;
+  padding-right: 28px;
+}
+.ixp-component-form-style-brand-brand.ixp-required-input-asterisk .ixp-component-form-field-input-container .ixp-component-dropdown-inherit.ixp-input-required .ixp-component-dropdown-input-wrap:before {
+  content: "*";
+  display: block;
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  font-family: Arial, Helvetica, sans-serif;
+  right: 5px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  z-index: 1;
+  line-height: normal;
+  font-size: 1em;
+  padding-top: 8px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-dropdown-inherit .select2-choice,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-dropdown-inherit .select2-choice,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-dropdown-inherit .select2-choice,
+.ixp-component-form-style-brand-brand.ixp-component-form-default-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-dropdown-inherit .select2-choice {
+  border-color: #B32F3D;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: #ffffff ;
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-dropdown-inherit .select2-choice,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-dropdown-inherit .select2-choice,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-dropdown-inherit .select2-choice,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-dropdown-inherit .select2-choice {
+  background-color: rgba(179, 47, 61, 0.95);
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-dropdown-inherit .select2-choice,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-dropdown-inherit .select2-choice,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-dropdown-inherit .select2-choice,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-dropdown-inherit .select2-choice,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-dropdown-inherit .select2-choice:focus,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-dropdown-inherit .select2-choice:focus,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-dropdown-inherit .select2-choice:focus,
+.ixp-component-form-style-brand-brand.ixp-component-form-fill-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-dropdown-inherit .select2-choice:focus {
+  border-color: #621a21;
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-dropdown-inherit .ixp-component-dropdown-input-wrap,
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-dropdown-inherit .ixp-component-dropdown-input-wrap,
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-dropdown-inherit .ixp-component-dropdown-input-wrap,
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-dropdown-inherit .ixp-component-dropdown-input-wrap {
+  padding-right: 28px;
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-dropdown-inherit .ixp-component-dropdown-input-wrap:before,
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-dropdown-inherit .ixp-component-dropdown-input-wrap:before,
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-dropdown-inherit .ixp-component-dropdown-input-wrap:before,
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-dropdown-inherit .ixp-component-dropdown-input-wrap:before {
+  content: "";
+  display: block;
+  position: absolute;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  right: -6px;
+  top: 1px;
+  width: 26px;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+  background: #B32F3D url(invalid.png) 5px 4px no-repeat;
+}
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-invalid.ixp-component-dropdown-inherit .ixp-component-dropdown-input-wrap:after,
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-invalid.ixp-component-dropdown-inherit .ixp-component-dropdown-input-wrap:after,
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onsubmit.ixp-component-form-submitted .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-dropdown-inherit .ixp-component-dropdown-input-wrap:after,
+.ixp-component-form-style-brand-brand.ixp-component-form-icon-validation.ixp-component-form-show-validation-onchange.ixp-component-form-validated .ixp-input-validated.ixp-input-validation-incomplete.ixp-component-dropdown-inherit .ixp-component-dropdown-input-wrap:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 20px;
+  top: 10px;
+  border-left: 4px solid transparent;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-right: 4px solid #B32F3D;
+}
+.ixp-component-dropdown-menu-brand-brand.select2-drop {
+  width: 100%;
+  margin-top: 2px;
+  position: absolute;
+  z-index: 2147483637;
+  top: 100%;
+  background: #FFF;
+  color: inherit;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #8a9a9a;
+}
+.ixp-component-dropdown-menu-brand-brand.select2-drop-above.select2-drop {
+  margin-top: 1px;
+}
+.ixp-component-dropdown-menu-brand-brand.select2-drop-auto-width {
+  width: auto;
+}
+.ixp-component-dropdown-menu-brand-brand .select2-results {
+  max-height: 200px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: left;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 1em;
+}
+.ixp-component-dropdown-menu-brand-brand .select2-result {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.ixp-component-dropdown-menu-brand-brand .select2-result:hover,
+.ixp-component-dropdown-menu-brand-brand .select2-result.select2-highlighted {
+  background: transparent !important;
+  color: #59c9d5;
+}
+.ixp-component-dropdown-menu-brand-brand .select2-result-label {
+  padding: 10px 7px;
+}
+.ixp-component-dropdown-menu-brand-brand .select2-no-results,
+.ixp-component-dropdown-menu-brand-brand .select2-searching {
+  list-style-type: none;
+  margin: 5px 0;
+  text-align: center;
+}
+.ixp-component-dropdown-menu-brand-brand .select2-search {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  z-index: 10000;
+  white-space: nowrap;
+  min-height: 28px;
+  padding: 5px;
+  border-bottom: 1px solid #eaeaea;
+}
+.ixp-component-dropdown-menu-brand-brand .select2-input {
+  width: 100%;
+  height: auto!important;
+  margin: 0;
+  outline: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-family: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  min-height: 28px;
+  padding: 4px 17px 4px 20px;
+  border: 1px solid #eaeaea;
+  background: #fbfbfb;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 1em;
+}
+.ixp-component-dropdown-menu-brand-brand .select2-search:before {
+  content: "";
+  display: block;
+  position: absolute;
+  opacity: 0.5;
+  width: 12px;
+  height: 12px;
+  top: 13px;
+  left: 11px;
+  background-image: url('brand_sprite-dropdown.png');
+  background-position: 0 -12px;
+}
+.ixp-component-dropdown-menu-brand-brand .select2-drop-close,
+.ixp-component-dropdown-menu-brand-brand.ixp-component-dropdown-menu-responsive-disabled .select2-drop-close {
+  display: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2), only screen and (-ms-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ixp-component-dropdown-menu-brand-brand .select2-search:before {
+    background-image: url('brand_sprite-dropdown@2x.png');
+    background-size: 24px 24px;
+  }
+}
+.ixp-component-dropdown-menu-brand-brand:not(.ixp-component-dropdown-menu-responsive-disabled) {
+  max-height: 100%;
+  text-align: right;
+  overflow: hidden;
+  position: fixed;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+}
+.ixp-component-dropdown-menu-brand-brand:not(.ixp-component-dropdown-menu-responsive-disabled) .select2-results {
+  max-height: 100%;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+.ixp-mzr-csscalc .ixp-component-dropdown-menu-brand-brand:not(.ixp-component-dropdown-menu-responsive-disabled) .select2-results {
+  max-height: calc(100% - 40px);
+}
+.ixp-component-dropdown-menu-brand-brand:not(.ixp-component-dropdown-menu-responsive-disabled).select2-with-searchbox .select2-results {
+  margin-top: 0;
+  max-height: 100%;
+}
+.ixp-mzr-csscalc .ixp-component-dropdown-menu-brand-brand:not(.ixp-component-dropdown-menu-responsive-disabled).select2-with-searchbox .select2-results {
+  max-height: calc(100% - 80px);
+}
+.ixp-mzr-csscalc .ixp-component-dropdown-menu-brand-brand:not(.ixp-component-dropdown-menu-responsive-disabled) {
+  width: calc(100% - 10px) !important;
+  height: calc(100% - 10px) !important;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2), only screen and (-ms-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ixp-component-dropdown-menu-brand-brand .select2-drop-close:before {
+    background-image: url('brand_sprite-dropdown@2x.png');
+    background-size: 24px 24px;
+  }
+  .ixp-component-dropdown-menu-brand-brand .select2-drop-close {
+    position: relative;
+    z-index: 10001;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    top: 0;
+    right: 15px;
+    width: 53px;
+    padding: 3px 0;
+  }
+  .ixp-component-dropdown-menu-brand-brand .select2-drop-close:before {
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0.8;
+    width: 12px;
+    height: 12px;
+    top: 9px;
+    left: 9px;
+    background-image: url('brand_sprite-dropdown.png');
+    background-position: -12px -12px;
+  }
+}
+.ixp-component-dropdown-menu-brand-brand .select2-drop-close-label {
+  position: relative;
+  font-size: 1em;
+  top: 1px;
+  left: 8px;
+}

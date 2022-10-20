@@ -1,0 +1,271 @@
+/* ======================================
+	Navigation: Default Style Overrides
+====================================== */
+
+// Main Wrapper
+.ixp-nav {
+    background-color: @nav-background;
+    color: @nav-color;
+    font-size: @nav-font-size;
+    margin: @nav-margin;
+    text-transform: @nav-text-transform;
+    padding: @nav-padding;
+    text-align: @nav-text-align;
+
+    // Navigation Wrapper
+    .ixp-nav-collapsible {
+	    height: auto;
+	    float: @nav-float;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        
+        // list item
+        .ixp-navitem {
+            background: none;
+            display: inline-block;
+            float: @navitem-float;
+            list-style-type: none;
+            margin: @navitem-margin;
+            padding: @navitem-padding;
+            
+            & when (@navitem-border = true) {
+                border-right: solid 1px @color-f;
+            }
+            
+            & when (@navitem-border = false) {
+                border-right:none;
+            }
+            
+                a {
+                    background-color: @navlink-background;
+                    color: @nav-color;
+                    display: block;
+                    padding: @navlink-padding;
+                    text-decoration: none;
+                    font-family: @nav-font-family;
+                    font-weight: @nav-font-weight;
+                    line-height:1;
+                   
+                    &:hover {
+                        background-color: @navlink-background-hover;
+                        color: @navlink-color-hover;
+                        text-decoration: none;
+                        }
+                
+                    }
+                }
+            }
+    
+     // Navigation UL List
+    .ixp-navlist {
+        
+        li:last-child {
+            & when (@navitem-border = true) {
+                border-right: none; // Removes line to right of last navigation item
+            }
+        }
+    }
+    
+     // Hamburger Responsive Nav Styling
+     // Navigation Wrapper Mobile - Menu Closed
+        &.ixp-nav-collapsed {
+        background-color:  @nav-background;
+        margin: @nav-collapsed-margin;
+        text-align: @nav-text-align-a;
+        
+             // Navigation Wrapper Mobile - Menu Opened
+            .ixp-nav-opened {
+                background-color: @nav-background;
+                }
+
+	       .ixp-nav-collapsible {
+		      float: none; //Nav elements fill page width
+	           }
+
+            // List Item
+            .ixp-navitem {
+                display: block;
+                float: none;
+                margin: @navitem-margin-a;
+                padding: @navitem-padding-a;
+                border:none;
+           
+                    & when (@navitem-border = true) {
+                        border-bottom: solid 1px @color-f;
+                        border-right: none;
+                    }
+
+                a {
+                    padding: @navlink-collapsed-padding;
+                    text-align: @nav-text-align-collapsed;
+                    font-size: @nav-collapsed-font-size;
+                    }
+                }
+            }
+
+    // Toggle Hamburger
+    .ixp-nav-toggle {
+	    margin: 0;
+
+        // Hamburger coloring
+        .ixp-nav-icon-bar { /* nav toggle button icon (menu closed) */
+            background-color: @hamburger-color-closed; // bar color
+            opacity: .6;
+            }
+        &:hover .ixp-nav-icon-bar {
+                background-color: @hamburger-color-hover;
+                opacity: 1;
+                }
+
+        &.ixp-nav-active {
+            .ixp-nav-icon-bar { /* nav toggle button icon (menu open) */
+                background-color: @hamburger-color-open; // bar color
+                opacity: 1;
+                }
+            }
+        }
+    }
+
+/* ======================================
+	Navigation: alt theme(s)
+    REQUIRED CLASS - .ixp-nav-menu-a
+====================================== */
+
+/* ========== THEME A ========== */
+// Main Wrapper
+.ixp-nav-menu-a {
+    background-color: @nav-background-a;
+    color: @nav-color-a;
+    margin: @nav-margin-a;
+    padding: @nav-padding-a;
+    font-size: @nav-font-size-a;
+    text-align: @nav-text-align-a;
+    
+    // Navigation Wrapper
+    .ixp-nav-collapsible {
+        float: @nav-float-a;
+        
+        // list item
+        .ixp-navitem {
+            float:  @navitem-float-a;
+            
+                a {
+                    background-color: @navlink-background-a;
+                    color: @nav-color-a;
+                    padding: @navlink-padding-a;
+                    text-decoration: none;
+                    font-size: 1em;
+                    font-family: @nav-font-family-a;
+                    font-weight: @nav-font-weight-a;
+                
+                    &:hover {
+                        background: @navlink-background-hover-a;
+                        color: @navlink-color-hover-a;
+                    }
+                
+                    }
+            }
+        }
+    
+       // Navigation UL List
+    .ixp-navlist {
+        padding-top:10px;
+        li:last-child {
+            /* Overrides Default Styling from ixp-nav */
+           border:none
+            }
+        }
+
+     // Navigation Wrapper Mobile - Menu Closed
+        &.ixp-nav-collapsed {
+        /* BG color solid or transparent */
+        background-color:  @nav-background-a;
+        margin: @nav-collapsed-margin-a;
+        text-align: @nav-text-align-collapsed-a;
+            
+            .ixp-navlist {
+            }
+            
+             // Navigation Wrapper Mobile - Menu Opened
+            .ixp-nav-opened {
+                background-color:  @nav-background-a;
+            
+                li:first-child {
+                  //Adds margin to the first nav item
+                  margin-top: 0.5em;
+                  }
+
+                }
+            
+        // List Item
+        .ixp-navitem {
+            margin-left:0;
+            margin-right:0;
+            a {
+                padding:@navlink-collapsed-padding-a;
+                text-decoration: none;
+                margin:0;
+                font-size: @nav-collapsed-font-size-a;
+                
+                &:hover {
+                    background-color: @navlink-background-hover-a
+                    }
+                }
+            }
+        }
+
+    // Toggle Hamburger
+    .ixp-nav-toggle {
+	    margin: 0 0 5px;
+
+        // Hamburger coloring
+        .ixp-nav-icon-bar { /* nav toggle button icon (menu closed) */
+            background-color: @hamburger-color-closed-a; // bar color
+            }
+         &:hover .ixp-nav-icon-bar {
+                background-color: @hamburger-color-hover-a;
+                }
+
+        &.ixp-nav-active {
+            .ixp-nav-icon-bar { /* nav toggle button icon (menu open) */
+                background-color: @hamburger-color-open-a; // bar color
+                }
+            }
+        }
+    }
+
+/* ======================================
+	Navigation IXP Information
+====================================== */
+
+.ixp-nav-menu-a { .ixp-navigation("@{navigation-a-name}");}
+
+/* ======================================
+	Navigation Active States
+    REQUIRED CLASS - ixp-navitem-active-state-a, ixp-navitem-active-state-b
+====================================== */
+
+.ixp-navitem-active-state-a a {
+    color: @navlink-color-active !important;
+    background: @navlink-background-active !important;
+    
+    &:hover {
+        color: @navlink-color-active-hover !important;
+    }
+}
+
+.ixp-navitem-active-state-b a {
+    color: @navlink-color-active-a !important;
+    background: @navlink-background-active-a !important;
+    &:hover {
+        color: @navlink-color-active-hover-a !important;
+    }
+}
+
+/* ======================================
+	Navigation Active States IXP Information
+====================================== */
+
+.ixp-navitem-active-state-a { .ixp-navitem("@{active-state-name}"); }
+.ixp-navitem-active-state-b { .ixp-navitem("@{active-state-name-a}"); }

@@ -1,0 +1,177 @@
+/* ======================================
+	Tabs RMW (Default)
+====================================== */
+
+.lbui_tabs_v3,
+.lbui_tabs_v3.lbui_init{
+
+    // tabs
+    >.lbui_nav{
+
+        >.lbui_nav_inner{ // ul
+        
+            // normal state
+            >.lbui_toggle { // li
+                background: @tab-toggle-background;
+                .border-radius(@tab-border-radius);
+                border: @tab-toggle-border;
+                color: @tab-toggle-color;
+                margin: @tab-margin;
+                padding: @tab-padding;
+                filter: none;
+                text-shadow: none;
+                font-family: @font-family-base;
+                .transition(@tab-transition);
+                font-size: @tab-font-size;
+                position:relative;
+
+                >.lbui_first,
+                &:first-child {
+                    margin-left: 0;
+                    }
+
+                &:hover {
+                    background: @tab-hover-background;
+                    border: @tab-hover-border;
+                    color: @tab-hover-color;
+                    filter: none;
+                }
+                
+            }
+            
+            >.lbui_active {
+                    background: @tab-active-background;
+                    border: @tab-active-border;
+                    color: @tab-active-color;
+                    filter: none !important;
+                
+                    &:hover {
+                        background: @tab-active-background;
+                        border: @tab-hover-border;
+                        color: @tab-active-color;
+                        filter: none !important;
+                    }
+                }
+        }
+    }
+
+    &.lbui_stacked_nav .lbui_toggle{
+        margin-right: 0;
+    }
+
+    // tab containers
+    >.lbui_slides{
+        background: @tab-slide-bg;
+        border: @tab-slides-border;
+        .border-radius(@tab-slide-border-radius) !important;
+        font-size: @tab-slide-font-size;
+    }
+
+    .lbui_slide {
+        color:@font-color-base;
+    }
+
+}
+
+/* ======================================
+	Tabs RMW (Alternate)
+====================================== */
+
+.tab-a{
+    &.lbui_tabs_v3,
+    &.lbui_tabs_v3.lbui_init{
+    
+        // tabs
+        >.lbui_nav{
+    
+            >.lbui_nav_inner{ // ul
+                    
+                    >.lbui_toggle { // li
+                        background: @tab-a-toggle-background;
+                        border: none;
+                        border-bottom: @tab-a-border-bottom;
+                        color: @tab-a-toggle-color;
+                        filter: none;
+                        text-shadow: none;
+                        margin: @tab-a-margin;
+                        .transition(@tab-transition);
+                        .border-radius(0);
+                        z-index: 10;
+        
+                        >.lbui_first,
+                        &:first-child {
+                            margin-left: 0;
+                            }
+        
+                        &:hover {
+                            background: @tab-a-hover-background;
+                            border-color: @tab-a-hover-background;
+                            color: @tab-a-hover-color;
+                            filter: none;
+                        }
+                    }
+                    
+                    >.lbui_active {
+                            background: @tab-a-active-background;
+                            border-color: @tab-a-active-background;
+                            color: @tab-a-active-color;
+                            filter: none !important;
+                            .box-shadow(none);
+                            &:after {
+                                display:none;
+                            }
+                        
+                        &:hover {color: @tab-a-hover-color;}
+                        }
+                }
+            }
+                    
+        &.lbui_stacked_nav .lbui_toggle{
+            margin-right: 0;
+        }
+    
+        // tab containers
+        >.lbui_slides{
+            background: @tab-a-slide-bg;
+            border: none;
+            .box-shadow(@tab-a-box-shadow);
+            border-radius: 0 !important;
+            font-size: 1em;
+        }
+    } 
+}
+
+/* stacked responsive overrides */
+.lbui_tabs_v3.lbui_stacked_nav>.lbui_slides {
+    margin-top: 15px !important;
+}
+.lbui_tabs_v3.lbui_stacked_nav>.lbui_nav>.lbui_nav_inner>.lbui_toggle {
+    float: none;
+    display: block;
+    margin:0;
+    .border-radius(@tab-border-radius)!important;
+} 
+
+.lbui_tabs_v3.lbui_stacked_nav>.lbui_nav>.lbui_nav_inner>.lbui_toggle:after {
+    display:none;
+}
+
+/* stacked responsive overrides */
+.tab-a.lbui_tabs_v3.lbui_stacked_nav>.lbui_slides {
+    margin-top: 5px !important;
+}
+.tab-a.lbui_tabs_v3.lbui_stacked_nav>.lbui_nav>.lbui_nav_inner>.lbui_toggle {
+    float: none;
+    display: block;
+    margin:0;
+    .border-radius(0)!important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+} 
+/* ======================================
+	Tabs IXP Information
+    REQUIRED CLASSES: .tab-a
+====================================== */
+
+.tab-a  {.ixp-tabs("@{tab-a-name}");}

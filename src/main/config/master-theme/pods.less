@@ -1,0 +1,101 @@
+/* ======================================
+	Pods
+    REQUIRED CLASS: .pod, .pod-a, .pod-b, .pod-c, .pod.form-pod-a
+    NOTE: .pod, .pod-b, .pod-c style values should not change. 
+    They should be Transparent (.pod), Transparent White (.pod-b) and Transparent Black (.pod-c) always.
+====================================== */
+
+// Pods use a mixin with two parameters.
+// The first parameter is whether the pod should have "light" or "dark" text, set in the settings.less file.
+// The second parameter is the background color of the pod.
+
+.pod {
+    padding: @pod-padding;
+    .generic-fill {
+        .button-a();
+    }
+    .generic-outline {
+        .button-b();
+    }
+
+    &.pod-a {
+        .pod-theme-selector(dark, @color-white);
+    }
+
+    &.pod-b {
+        .pod-theme-selector(dark, rgba(255, 255, 255, .60));
+    }
+
+    &.pod-c {
+        .pod-theme-selector(light, rgba(0, 0, 0, .60));
+    }
+
+    &.pod-d {
+        .pod-theme-selector(light, @color-black);
+    }
+
+    &.pod-e {
+        .pod-theme-selector(@pod-e-color, @pod-e-bg);
+    }
+    &.pod-f {
+        .pod-theme-selector(@pod-f-color, @pod-f-bg);
+    }
+    &.pod-g {
+        .pod-theme-selector(@pod-g-color, @pod-g-bg);
+    }
+    &.pod-h {
+        .pod-theme-selector(@pod-h-color, @pod-h-bg);
+    }
+    &.pod-i {
+        .pod-theme-selector(@pod-i-color, @pod-i-bg);
+    }
+    &.pod-j {
+        .pod-theme-selector(@pod-j-color, @pod-j-bg);
+    }
+    &.pod-k {
+        .pod-theme-selector(@pod-k-color, @pod-k-bg);
+    }
+    &.pod-l {
+        .pod-theme-selector(@pod-l-color, @pod-l-bg);
+    }
+}
+
+/* ======================================
+	Pods with Form Styling
+
+	REQUIRED CLASS: .pod.form-pod-a
+====================================== */
+
+.pod {
+    &.form-pod-a {
+        .pod-theme-selector(@form-pod-a-color, @form-pod-a-bg);
+    }
+}
+
+
+/* ======================================
+	Pod IXP Information
+
+	REQUIRED CLASS: .pod, .pod-a, .pod.form-pod-a
+====================================== */
+
+.pod { .ixp-pod("Transparent"); }
+.pod.pod-a { .ixp-pod("@{color-white-name} Pod"); }
+.pod.pod-b { .ixp-pod("@{color-white-name} Transparent Pod"); }
+.pod.pod-c { .ixp-pod("@{color-black-name} Transparent Pod");}
+.pod.pod-d { .ixp-pod("@{color-black-name} Pod"); }
+
+// Primary
+.pod.pod-e { .ixp-pod("@{pod-e-name} Pod"); }
+.pod.pod-f { .ixp-pod("@{pod-f-name} Pod"); }
+.pod.pod-g { .ixp-pod("@{pod-g-name} Pod"); }
+.pod.pod-h { .ixp-pod("@{pod-h-name} Pod"); }
+
+// Secondary
+.pod.pod-l { .ixp-pod("@{pod-l-name} Pod"); }
+.pod.form-pod-a { .ixp-pod("@{form-pod-a-name} Pod"); }
+
+// Neutral
+.pod.pod-i { .ixp-pod("@{pod-i-name} Pod"); }
+.pod.pod-j { .ixp-pod("@{pod-j-name} Pod"); }
+.pod.pod-k { .ixp-pod("@{pod-k-name} Pod"); }

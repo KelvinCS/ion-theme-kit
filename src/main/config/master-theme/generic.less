@@ -1,0 +1,36 @@
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	text-align: left;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;    
+    font-family: @font-family-base;
+    font-size: @font-size-base-px;
+	color: @font-color-base;
+    font-weight: @font-weight-base;
+}
+
+body {
+  background: @background-color-base;
+  font-size: @font-size-base-em;
+  line-height: @line-height-base;
+}
+
+/*FONT SIZE MEDIA QUERIES*/
+
+@media only screen and (max-width: 1199px) {
+  body {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 991px) {
+  body {
+    font-size: 0.9em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 0.8em;
+  }
+}

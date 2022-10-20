@@ -1,0 +1,271 @@
+/* ======================================
+	ThemeName Theme.css
+
+    Created : Author 04/02/2020
+    Last Updated : Author 04/02/2020
+====================================== */
+
+@import "settings.less";
+@import "mixins.less";
+
+// Table
+.pf_form_table {
+    clear: both;
+    font-family: @font-family-base;
+    font-size: @font-size-input;
+    font-weight: @font-weight-1;
+    margin: @form-margin;
+    padding: @form-padding;
+    width: 100%;
+
+    // Row
+    .pf_field_row {
+        margin: 0.25em 0;
+        vertical-align: middle;
+    }  
+    
+    .pf_field_cell,
+    .pf_field_cell_bad{
+        padding-bottom:10px;
+    }
+
+    // Prefield Container
+    .pf_prefield_cell {
+    }
+    
+    // Prefield Text
+    .pf_prefield_text {
+    }
+
+    .pf_prefield_cell_empty {
+        display: hidden;
+    }
+    
+     // Postfield Container
+    .pf_postfield_cell {
+    }
+    
+    // Postfield Text
+    .pf_postfield_text {
+    }
+    
+
+    // Label Cell
+    .pf_label_cell {
+        padding: @form-cell-padding;
+        text-align: @form-cell-align;
+    }
+
+    // Label
+    .pf_label_text {
+        color: @input-color;
+    }
+    
+     // Hint Text and Multiline input
+    .pf_hint_text,.pf_hint_text_bad {
+        display: block;  
+    }
+
+    // Generic Input
+    .pf_text, 
+    .pf_text_narrow,
+    .pf_text_wide,
+    .pf_multiline,
+    .pf_multiline_narrow,
+    .pf_multiline_wide {
+        .box-sizing;
+        background: @input-bg;
+        border: @input-border;
+        color: @input-color;
+        font-size: @font-size-input;
+        padding: @input-padding;
+        .border-radius(@input-border-radius);
+        
+        &:hover,
+        &:focus {
+            /*Change elements on hover and focus*/
+        }
+    }
+    
+    // select menu (drop down)
+
+.pf_field_cell {
+    select {
+        .border-radius(@dropdown-border-radius);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: @input-bg;
+        background-image: url('@{select-icon-URL}');
+        background-position: @select-icon-x @select-icon-y;
+        background-repeat: no-repeat;
+        border: @input-border;
+        color: @input-color;
+        display: inline-block;
+        font-size: @font-size-input;
+        outline: none;
+        padding: @select-height 20px @select-height 5px;
+        .border-radius(@input-border-radius);
+
+        // remove arrow from FF
+        text-indent: 0.01px;
+        text-overflow: '';
+        
+        // remove arrow from IE
+         background-image: none\9;
+        padding: 5px 5px 5px 5px\9;
+
+        // remove arrow from IE
+        &::-ms-expand {
+            display: none;
+        }
+
+        // remove dotted label border (fix for FF)
+        &:-moz-focusring, &::-moz-focusring {
+            outline: none !important;
+            border: none !important;
+            color: @input-color;
+            color: rgba(0,0,0,0); // FF gets dotted focus line from the text color
+            text-shadow: 0 0 0 @input-color; // fake text color with shadow
+        }
+
+        &:hover {
+            color: @input-color-hover;
+            background-color: @input-bg-hover;
+        }
+
+        &:focus {
+            color: @input-color-hover !important;
+        }
+
+    }
+
+    option {
+        &:-moz-focusring, &::-moz-focusring {
+            outline: none !important;
+            border: none !important;
+            color: @input-color-hover;
+            color: rgba(0,0,0,0); // FF gets dotted focus line from the text color
+            text-shadow: 0 0 0 @input-color-hover; // fake text color with shadow
+        }
+    }
+}
+    
+ .pf_field_cell_bad  {
+        select {
+        .border-radius(@dropdown-border-radius);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: @input-bg;
+        background-image: url('@{error-select-icon-URL}');
+        background-position: @select-icon-x @select-icon-y;
+        background-repeat: no-repeat;
+        border: @error-border;
+        color: @error;
+        font-size: @font-size-input;
+        outline: none;
+        padding: @select-height 20px @select-height 5px;
+        .border-radius(@input-border-radius);
+
+        // remove arrow from FF
+        text-indent: 0.01px;
+        text-overflow: '';
+        
+        // remove arrow from IE
+         background-image: none\9;
+        padding: 5px 5px 5px 5px\9;
+
+        // remove arrow from IE
+        &::-ms-expand {
+            display: none;
+        }
+
+        // remove dotted label border (fix for FF)
+        &:-moz-focusring, &::-moz-focusring {
+            outline: none !important;
+            border: none !important;
+            color: @input-color;
+            color: rgba(0,0,0,0); // FF gets dotted focus line from the text color
+            text-shadow: 0 0 0 @input-color; // fake text color with shadow
+        }
+
+        &:hover {
+            color: @input-color-hover;
+            background-color: @input-bg-hover;
+        }
+
+        &:focus {
+            color: @input-color-hover !important;
+        }
+
+    }
+
+    option {
+        &:-moz-focusring, &::-moz-focusring {
+            outline: none !important;
+            border: none !important;
+            color: @input-color-hover;
+            color: rgba(0,0,0,0); // FF gets dotted focus line from the text color
+            text-shadow: 0 0 0 @input-color-hover; // fake text color with shadow
+        }
+    }
+  }
+    
+    // Generic Input Sizes
+    
+    .pf_text, .pf_multiline, .pf_dropdown {
+        width: 80%;
+    }
+
+    .pf_text_narrow, .pf_multiline_narrow, .pf_dropdown_narrow {
+        width: 50%
+    }
+        
+    .pf_text_wide, .pf_multiline_wide, .pf_dropdown_wide {
+        width: 100%
+    }
+    
+
+    //Input Field Error Style
+
+    .pf_field_row_bad .pf_text, .pf_field_row_bad .pf_text_narrow, .pf_field_row_bad .pf_text_wide, .pf_field_row_bad .pf_multiline, .pf_field_row_bad .pf_multiline_narrow, .pf_field_row_bad .pf_multiline_wide {
+        background: @input-bg url(formError.png) no-repeat right;    
+        border: @error-border;
+        padding: @input-padding;
+        .border-radius(@input-border-radius);
+    }
+    
+    //select error 
+
+    .pf_field_cell_bad  {  
+        select {
+          color: @error;
+          border: @error-border;
+        }
+    }
+    
+    .pf_label_cell_bad {
+        color: @error;
+        padding: @form-cell-padding;
+        text-align: @form-cell-align;
+        }
+    .pf_field_row_bad {
+        color: @error;
+        vertical-align: middle;
+    }
+    .pf_label_text_bad {
+        color: @error;
+    }
+   
+    // Submit Button Container
+    .pf_submit_cell {
+        padding: @submit-padding;
+
+        // Submit [as image]
+        .pf_submit_image {
+            border: none;
+        }
+    }
+}
+.pf_form_table img {border:none;}

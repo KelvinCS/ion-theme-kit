@@ -1,0 +1,31 @@
+/* ======================================
+	Logo
+
+	REQUIRED CLASS: .header-logo-light
+====================================== */
+
+.header-logo-light {
+    background-image: url('@{logo-a-URL}');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    min-height: @logo-a-height;
+    min-width: @logo-a-width;
+    background-size: @logo-a-width @logo-a-height;
+    display: inline-block;
+    text-indent: -9999px;
+}
+@media (max-width: 768px) { // media query to display a different logo image or logo specs for mobie and/or tablet
+   .header-logo-light {
+        min-height: @logo-a-height-sm;
+        min-width: @logo-a-width-sm;
+        background-size: @logo-a-width-sm @logo-a-height-sm;
+    }
+}
+
+/* ======================================
+	Logo IXP Information
+
+	REQUIRED CLASS: .header-logo-light
+====================================== */
+
+.header-logo-light { .ixp-logo("@{logo-a-name}"); }

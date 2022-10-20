@@ -1,0 +1,79 @@
+/* ======================================
+	List Items
+
+	REQUIRED CLASS: .bullet-a
+====================================== */
+
+ul, ol  {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: @li-margin;
+    list-style-type: @li-style;
+}
+
+ol {
+    margin-left: @ol-margin;
+    list-style-type: @ol-style;
+}
+
+ol li {
+    margin: @li-margin;
+}
+
+// ======================================
+//	Bullet A
+// ======================================
+
+.bullet-set-a() {
+    list-style-type: none;
+    position:relative;
+}
+
+// if applied to list's parent container
+.bullet-a { ul li { 
+    .bullet-set-a();
+    padding: @li-icon-padding; 
+}}
+.bullet-a { ul li:before { 
+    .font-icon();
+    content: @li-a-icon;
+    color: @bullet-a-color;
+    position: absolute;
+    left:0;
+    top:auto;
+} }
+
+// ======================================
+//	Bullet B
+// ======================================
+
+.bullet-set-b() {
+    list-style-type: none;
+    position:relative;
+}
+
+// if applied to list's parent container
+.bullet-b { ul li { 
+    .bullet-set-b();
+    padding: @li-icon-padding; 
+}}
+.bullet-b { ul li:before { 
+    .font-icon();
+    content: @li-b-icon;
+    color: @bullet-b-color;
+    position: absolute;
+    left:0;
+    top:auto;
+} }
+
+/* ======================================
+	List IXP Information
+
+	REQUIRED CLASS: .bullet-a
+====================================== */
+
+.bullet-a { .ixp-bullet("@{bullet-a-name}"); }
+.bullet-b { .ixp-bullet("@{bullet-b-name}"); }

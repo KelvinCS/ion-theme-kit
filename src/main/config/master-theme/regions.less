@@ -1,0 +1,196 @@
+// Regions use a mixin with four parameters. 
+// The first parameter is whether the region should have "light" or "dark" text, set in the settings.less file.
+// The second parameter is the background color of the region.
+// The third is the region padding.
+// The fourth is the region font size.
+
+/* ======================================
+	Pre Header
+
+	REQUIRED CLASS: .pre-header, .pre-header-a
+====================================== */
+
+.pre-header {
+    padding: @pre-header-padding;
+    }
+
+.pre-header-a {
+    .region-theme-selector(@pre-header-a-color, @pre-header-a-bg, @pre-header-padding, @font-size-base-em);
+}
+
+/* ======================================
+	Pre Header IXP Information
+    REQUIRED CLASSES: .pre-header, .pre-header-a
+====================================== */
+
+.pre-header {.ixp-regions-cl("Pre-Header - Transparent");}
+.pre-header-a {.ixp-regions-cl("Pre-Header - @{pre-header-a-name}");}
+
+
+@import "logo.less";
+
+
+/* ======================================
+	Header
+
+	REQUIRED CLASS: .header,.header-a
+====================================== */
+
+.header {
+    padding: @header-padding;     
+}
+
+.header-a {
+    .region-theme-selector(@header-a-color, @header-a-bg, @header-padding, @font-size-base-em);
+}
+
+.header-b {
+    .region-theme-selector(@header-b-color, @header-b-bg, @header-padding, @font-size-base-em);
+}
+
+/* ======================================
+    Header IXP Information
+    REQUIRED CLASSES: .header, .header-a
+====================================== */
+
+.header {.ixp-regions-cl("Header - Transparent");}
+.header-a {.ixp-regions-cl("Header - @{header-a-name}");}
+.header-b {.ixp-regions-cl("Header - @{header-b-name}");}
+
+/* ======================================
+	Inner Content Wrap
+
+	NOTE: Container that includes the
+	pre-content, content & post-content
+
+	REQUIRED CLASS: .inner-content-wrapper
+====================================== */
+
+.inner-content-wrapper {
+}
+
+.inner-content-wrapper-a {
+    background: @innercontent-a-bg;   
+}
+
+/* ======================================
+    Inner Content Wrap IXP Information
+    REQUIRED CLASSES: .inner-content-wrapper
+====================================== */
+
+.inner-content-wrapper {.ixp-regions-c("Inner Content - Transparent");}
+.inner-content-wrapper-a {.ixp-regions-c("Inner Content - @{innercontent-a-name}");}
+
+/* ======================================
+	Pre Content
+    REQUIRED CLASSES: .pre-content
+====================================== */
+
+.pre-content {
+    padding: @pre-content-padding;  
+}
+
+/* ======================================
+    Pre Content IXP Information
+    REQUIRED CLASSES: .pre-content
+====================================== */
+
+.pre-content {.ixp-regions-cl("Pre-Content - Transparent");}
+
+/* ======================================
+	Content
+    REQUIRED CLASSES: .content, .content-a, .content-b, .content-c
+    NOTE: Content A should be a white background with styles, content B should be a light gray or very pale color with styles, and content C should be the main brand color or dark color with styles.
+====================================== */
+
+.content {
+    padding: @content-padding;
+
+    &.content-a {
+        .region-theme-selector(@content-a-color, @content-a-bg, @content-padding, @font-size-base-em);
+    }
+    &.content-b {
+        .region-theme-selector(@content-b-color, @content-b-bg, @content-padding, @font-size-base-em);
+    }
+    &.content-c {
+        .region-theme-selector(@content-c-color, @content-c-bg, @content-padding, @font-size-base-em);
+    }
+}
+
+/* ======================================
+    Content IXP Information
+    REQUIRED CLASSES: .content, .content-a, .content-b, .content-c
+    NOTE: Content A should be a white background with styles, content B should be a light gray or very pale color with styles, and content C should be the main brand color or dark color with styles.
+====================================== */
+
+.content {.ixp-regions-cl("Content");}
+.content.content-a {.ixp-regions-cl("Content - @{content-a-name}");}
+.content.content-b {.ixp-regions-cl("Content - @{content-b-name}");}
+.content.content-c {.ixp-regions-cl("Content - @{content-c-name}");}
+
+/* ======================================
+	Post Content
+
+	REQUIRED CLASS: .post-content,.post-content-a
+====================================== */
+
+.post-content {
+    padding: @post-content-padding;    
+}
+
+.post-content-a {
+    .region-theme-selector(@post-content-a-color, @post-content-a-bg, @post-content-padding, @font-size-base-em);
+}
+
+/* ======================================
+    Post Content IXP Information
+    REQUIRED CLASSES: .post-content,.post-content-a
+====================================== */
+
+.post-content {.ixp-regions-cl("Post-Content - Transparent");}
+.post-content-a {.ixp-regions-cl("Post-Content - @{post-content-a-name}");}
+
+/* ======================================
+	Footer
+
+	REQUIRED CLASS - .footer, .footer-a
+====================================== */
+
+.footer {
+    font-size: @footer-font-size;
+    padding: @footer-padding;    
+}
+
+.footer-a {
+    .region-theme-selector(@footer-a-color, @footer-a-bg, @footer-padding, @footer-font-size);
+}
+
+/* ======================================
+    Footer IXP Information
+    REQUIRED CLASSES: .footer, .footer-a
+====================================== */
+
+.footer {.ixp-regions-cl("Footer Transparent");}
+.footer-a {.ixp-regions-cl("Footer - @{footer-a-name}");}
+
+/* ======================================
+	Post Footer
+    REQUIRED CLASSES: .post-footer, .post-footer-a
+====================================== */
+
+.post-footer {
+    font-size: @post-footer-font-size;
+    padding: @post-footer-padding; 
+}
+
+.post-footer-a {
+    .region-theme-selector(@post-footer-a-color, @post-footer-a-bg, @post-footer-padding, @post-footer-font-size);
+}
+
+/* ======================================
+    Post Footer IXP Information
+    REQUIRED CLASSES: .post-footer, .post-footer-a
+====================================== */
+
+.post-footer {.ixp-regions-cl("Post-Footer - Transparent");}
+.post-footer-a {.ixp-regions-cl("Post-Footer - @{post-footer-a-name}");}
