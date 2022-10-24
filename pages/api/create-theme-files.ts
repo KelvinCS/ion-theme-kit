@@ -1,82 +1,69 @@
 
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
-import less from 'less'
 import {exec} from 'child_process'
 
-import fs from 'fs'
+import fs from 'fs-extra'
 import fsExtra from 'fs-extra'
 import { createThemeIDXMLContent } from '../../src/helpers/createThemeIDXML'
 import { createSettingsFileContent } from '../../src/helpers/createSettingsFileContent'
+import JSZip from 'jszip';
 
 type Data = {
-  name: string
+  downloadLink: string
 }
-
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  // const settingsFile = fs.readFileSync('./src/main/config/master-theme/settings.less', {
-  //   encoding: 'utf8'
-  // })
-
-  // const themeFile = fs.readFileSync('./src/main/config/master-theme/theme.less', {
-  //   encoding: 'utf8'
-  // })
-
-  // const {variables, config} = req.body
-
-  // console.log(config)
-  // const lines = settingsFile.split('\n')
-
-  // const result = lines.reduce((content, line) => {
-  //   const variableName = line.split(':')[0]
-  //   const newValue = variables[variableName]
-
-  //   if (newValue) {
-  //     content += `${variableName}: ${newValue}\n`
-  //   } else {
-  //     content += `${line}\n`
-  //   }
-
-  //   return content
-  // }, "")
-
-  // const compiler = new Promise((resolve) => {
-  //   const child = exec('npx lessc --js ./src/main/config/master-theme/theme.less ./src/main/config/teste/theme.css')
-  //   child.on('exit', resolve)
-
-  // })
-
-  // await compiler
 
   const {variables, config} = req.body
+  console.info(req.body)
+
+  const dirName = config.themeName.split(' ').join('_')
+
+  const workingDir = `./working-dir/${dirName}`
+  const outputDir = `./outputs/${dirName}`
 
   const themeIDXMLFileContent = createThemeIDXMLContent(config) 
   const settingsFile = createSettingsFileContent(variables)
   const webfontsFile = fs.readFileSync('./src/main/config/master-theme/webfonts.txt')
 
-  await fsExtra.copy('./src/main/config/master-theme', './working-dir')
-  await fsExtra.writeFile('./working-dir/settings.less', settingsFile)
+  try {
+    await fs.rmdir(workingDir)
+    await fs.rmdir(outputDir)
+  } catch {
+    console.log('Coundnt delete files')
+  }
+
+  await fs.ensureDir(workingDir)
+  await fs.ensureDir(outputDir)
+
+  await fsExtra.copy('./src/main/config/master-theme', workingDir)
+  await fsExtra.writeFile(`${workingDir}/settings.less`, settingsFile)
 
   await new Promise((resolve) => {
-    const child = exec('npx lessc --js ./working-dir/theme.less ./outputs/theme.css')
+    const command = `npx lessc --js ${workingDir}/theme.less ${outputDir}/theme.css`
+    const child = exec(command, console.log)
+    child.stdout?.on('data', console.log)
     child.on('exit', resolve)
   })
 
-  // await fsExtra.writeFile('./outputs/themeID.xml', themeIDXMLFileContent)
-  // await fsExtra.writeFile('./outputs/webfonts.txt', webfontsFile)
+  await fsExtra.writeFile(`${outputDir}/themeID.xml`, themeIDXMLFileContent)
+  await fsExtra.writeFile(`${outputDir}/webfonts.txt`, webfontsFile)
 
+  const zip = new JSZip()
 
-  // masterThemeFiles.forEach((filename) => 
-  //   fs.copyFileSync(`./src/main/config/master-theme/${filename}`, './src/working-dir/')
-  // )
+  await zip.file(`themeID.xml`, fs.readFileSync(`${outputDir}/themeID.xml`))
+  await zip.file(`webfonts.txt`, fs.readFileSync(`${outputDir}/webfonts.txt`))
+  await zip.file(`theme.css`, fs.readFileSync(`${outputDir}/theme.css`))
 
-  // less.render('', { paths: ['./src/main/config/master-theme/'] })
+  await new Promise<void>((resolve) => {
+    zip.generateNodeStream({ type: 'nodebuffer', streamFiles: true })
+    .pipe(fs.createWriteStream(`${outputDir}/${dirName}.zip`))
+    .on('finish', resolve)
+  })
 
-
-  res.setHeader('Content-Disposition', 'attachment; filename=theme.css')
-  res.send('sdfas' as any)
+  res.json({ downloadLink: `http://localhost:3000/api/download-theme?theme=${dirName}` })
 }

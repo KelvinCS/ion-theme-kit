@@ -203,7 +203,8 @@
       {
         "name": "Font",
         "type": "textarea",
-        "defaultValue": ""
+        "defaultValue": "",
+        "variableName": "@typography"
       }
     ]
   },
