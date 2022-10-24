@@ -1,3 +1,5 @@
+import { Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay, useDisclosure } from '@chakra-ui/react';
+import { Box, Text } from '@reverb-ui/react';
 import React, {useEffect, useMemo, useState} from 'react';
 import { sendWizard, TSendWizardConfig } from '../../api/wizard';
 import {TWizardStep, TWizardStepField, TWizardStepSection} from "../../domain/entities/wizard-step";
@@ -56,13 +58,19 @@ export const ThemeWizardProvider = ({children}: TThemeWizardProviderProps) => {
     }))
   }
 
-  useEffect(() => {console.log(stepsState)}, [stepsState])
+  const [downloadLink, setDownloadLink] = useState<string>()
+
+  const {
+    isOpen: isDownloadModalOpen,
+    onClose: closeDownloadModal,
+    onOpen: openDownloadModal
+  } = useDisclosure()
 
   const finishWizard = () => {
     sendWizard({ variables: stepsState, config: wizardConfig })
-      .then(console.log)
+      .then(({ data }) => setDownloadLink(data.downloadLink))
+      .then(() => openDownloadModal())
   }
-
 
   const steps: TWizardStepWithState[] = useMemo(() => {
     return wizardSteps.map((step) => {
@@ -91,14 +99,30 @@ export const ThemeWizardProvider = ({children}: TThemeWizardProviderProps) => {
   }, [stepsState])
 
   return (
-    <ThemeWizardContext.Provider value={{
-      setFieldState,
-      steps,
-      finishWizard,
-      config: wizardConfig, 
-      setConfigField
-    }}>
-      {children}
+    <ThemeWizardContext.Provider
+      value={{
+        setFieldState,
+        steps,
+        finishWizard,
+        config: wizardConfig,
+        setConfigField,
+      }}
+    >
+      <Box>
+        <Modal isOpen={isDownloadModalOpen} onClose={closeDownloadModal}>
+          <ModalOverlay />
+          <ModalContent>
+            <ModalHeader>
+              <Text>Download link</Text>
+              <ModalCloseButton />
+            </ModalHeader>
+            <ModalBody>
+              <a href={downloadLink}>{downloadLink}</a>
+            </ModalBody>
+          </ModalContent>
+        </Modal>
+        {children}
+      </Box>
     </ThemeWizardContext.Provider>
-  )
+  );
 }
